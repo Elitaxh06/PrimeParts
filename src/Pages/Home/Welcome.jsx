@@ -3,7 +3,7 @@ import React from "react";
 
 function Welcome() {
     return(
-        <section className="bg-slate-100 mt-24 h-80 w-full flex justify-center items-center flex-col ">
+        <section className="bg-slate-100 mt-24 pb-24 pt-24 w-full flex justify-center items-center flex-col ">
             <div className="text center">
                 <h1 className="font-bold text-5xl">Bienvenido a PrimeParts</h1>
             </div>

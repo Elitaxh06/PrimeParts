@@ -1,0 +1,16 @@
+.span{
+    color: rgba(255, 255, 255, 0.616);
+}
+
+
+#der{
+    color: rgba(255, 255, 255, 0.616);
+}
+
+#quick li{
+    color: rgba(255, 255, 255, 0.616);
+}
+#quick li:hover{
+    color: #fff;
+    cursor: pointer;
+}

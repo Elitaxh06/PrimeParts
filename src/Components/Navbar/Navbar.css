@@ -1,4 +1,15 @@
 #navbar{
     cursor:pointer;
-    
+
 }
+
+@media (max-width: 569px){
+    header{
+        display: flex;
+        flex-direction: column;
+    }
+    #number{
+        margin-top: 25px;
+    }
+}
+

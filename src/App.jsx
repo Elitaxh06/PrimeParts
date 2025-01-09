@@ -1,6 +1,5 @@
 import { useState } from 'react'
-import { Home } from './Pages/Home/Home'
-import { Footer } from './Components/Footer/Footer'
+import  { Routing }  from './Routes/Routing'
 import './App.css'
 
 function App() {
@@ -8,8 +7,7 @@ function App() {
 
   return (
     <>
-      <Home />
-      <Footer />
+      <Routing />
     </>
   )
 }
