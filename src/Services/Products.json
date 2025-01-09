@@ -1,0 +1,28 @@
+[   {
+        "id": 1,
+        "name": "Filtro de aire",
+        "price": 12500,
+        "stock": 10,
+        "category": "Filtros",
+        "image": "/assts/img/filt.webp",
+        "isFeatured": true
+    },
+    {
+        "id": 2,
+        "name": "Freno",
+        "price": 1500,
+        "stock": 30,
+        "category": "Filtros",
+        "image": "/assts/img/filt.webp",
+        "isFeatured": true
+    },
+    {
+        "id": 3,
+        "name": "Volante",
+        "price": 2000,
+        "stock": 30,
+        "category": "Filtros",
+        "image": "/assts/img/filt.webp",
+        "isFeatured": true
+    }
+]
