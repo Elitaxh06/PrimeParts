@@ -35,9 +35,9 @@ const PayPalButton = () => {
     <div>
 
     <form 
+      target="_blank"
       action="https://www.paypal.com/ncp/payment/C8BX6E3VSR6Y8" 
       method="post" 
-      target="_top" 
       style={{ display: "inline-grid", justifyItems: "center", alignContent: "start", gap: "0.5rem" }}
       >
       <input 

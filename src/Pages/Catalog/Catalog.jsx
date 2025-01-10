@@ -1,5 +1,6 @@
 import React from "react";
 import { useState, useEffect } from "react";
+import { PayPalButton } from "../../Components/PayPalButton/PayPalButton";
 import { Products } from "./Products";
 function Catalog () {
     useEffect(() => {
@@ -12,6 +13,9 @@ function Catalog () {
     return (
         <section className="mt-28">
             <Products />
+            <div className="flex justify-center items-center mt-10">
+                <PayPalButton />
+            </div>
         </section>
     )
 }

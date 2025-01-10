@@ -1,0 +1,75 @@
+.cart-animation {
+    position: relative;
+    display: inline-block;
+  }
+  
+  /* Animación de caída del círculo */
+  .product-falling {
+    font-size: 14px;
+    position: absolute;
+    top: -5px; /* Comienza fuera de la vista */
+    left: 50%;
+    transform: translateX(-50%);
+    width: 20px;
+    height: 20px;
+    /* background-color: red; */
+    border-radius: 50%;
+    animation: fall 3s ease-in forwards;
+  }
+  #svg{
+    width: 40px;
+    height: 40px;
+    fill: white;
+  }
+  /* Animación de movimiento del carrito */
+  @keyframes moveCart {
+    0% {
+      transform: translateX(-100px);  /* Empieza desde la izquierda */
+    }
+    50% {
+      transform: translateX(0px);     /* Se mueve al centro */
+    }
+    100% {
+      transform: translateX(100px);    /* Finaliza ligeramente a la derecha */
+    }
+  }
+  
+  #svg {
+    animation: moveCart 2s ease-out forwards;
+  }
+  
+  /* Animación de la caída del círculo */
+  @keyframes fall {
+    0% {
+      top: -19px;  /* Empieza por encima */
+      opacity: 1;
+    }
+    50% {
+      top: 25px;  /* Alcanza el carrito */
+      opacity: 0;
+      transform: scale(0);
+
+      /* Puede hacerse un poco transparente */
+    }
+  }
+
+@media (max-width: 750px) {
+    @keyframes moveCart {
+        0% {
+          transform: translateX(-90px);  /* Empieza desde la izquierda */
+        }
+        50% {
+          transform: translateX(0px);     /* Se mueve al centro */
+        }
+        100% {
+          transform: translateX(90px);    /* Finaliza ligeramente a la derecha */
+        }
+      }
+      
+      #svg {
+        animation: moveCart 2s ease-out forwards;
+      }
+      
+      /* Animación de la caída del círculo */
+  
+}
