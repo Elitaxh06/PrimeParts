@@ -1,4 +1,5 @@
 import React from "react";
+import { NavLink } from "react-router";
 import "./Footer.css"
 
 function Footer() {
@@ -13,8 +14,8 @@ function Footer() {
                 <div className="ml-4">
                     <h4 className="text-white">Enlaces Rapidos</h4>
                     <ul id="quick">
-                        <li>Inicio</li>
-                        <li>Productos</li>
+                        <li><NavLink to="/">Inicio</NavLink></li>
+                        <li><NavLink to='/products'>Productos</NavLink></li>
                         <li>Nosotros</li>
                         <li>Contacto</li>
                     </ul>

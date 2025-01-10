@@ -11,7 +11,7 @@ function Navbar() {
             
             <ul id="navbar" className="flex mb-6">
                 <li className="ml-5"><NavLink to="/">Inicio</NavLink></li>
-                <li className="ml-5"><NavLink to='/catalog'>Productos</NavLink></li>
+                <li className="ml-5"><NavLink to='/products'>Productos</NavLink></li>
                 <li className="ml-5">Nostros</li>
                 <li className="ml-5">Contacto</li>
                 <li id='cart'>

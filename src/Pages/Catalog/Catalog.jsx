@@ -1,10 +1,17 @@
 import React from "react";
 import { useState, useEffect } from "react";
+import { Products } from "./Products";
 function Catalog () {
-    
+    useEffect(() => {
+        window.scrollTo({
+          top: 0,
+          left: 0,
+          behavior: 'smooth', // Desplazamiento suave
+        });
+      }, []);
     return (
         <section className="mt-28">
-            <h1 className="text-4xl">Catalogo</h1>
+            <Products />
         </section>
     )
 }

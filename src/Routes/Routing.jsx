@@ -11,7 +11,7 @@ export const Routing = () => {
             <Navbar />
             <Routes>
                 <Route path="/" element={<Home />} />
-                <Route path="/catalog" element={<Catalog />} />
+                <Route path="/products" element={<Catalog />} />
             </Routes>
             <Footer />
         </CartProvider>

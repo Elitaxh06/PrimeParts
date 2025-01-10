@@ -4,7 +4,7 @@
         "price": 12500,
         "stock": 10,
         "category": "Filtros",
-        "image": "/assts/img/filt.webp",
+        "image": "https://autorepuestoschacon.com/wp-content/uploads/2023/05/cropped-clutch-basket-disc-gearbox-car-isolated-white-scaled-1.jpg",
         "isFeatured": true
     },
     {
@@ -13,7 +13,7 @@
         "price": 1500,
         "stock": 30,
         "category": "Filtros",
-        "image": "/assts/img/filt.webp",
+        "image": "https://autorepuestoschacon.com/wp-content/uploads/2023/05/cropped-clutch-basket-disc-gearbox-car-isolated-white-scaled-1.jpg",
         "isFeatured": true
     },
     {
@@ -22,7 +22,70 @@
         "price": 2000,
         "stock": 30,
         "category": "Filtros",
-        "image": "/assts/img/filt.webp",
+        "image": "https://autorepuestoschacon.com/wp-content/uploads/2023/05/cropped-clutch-basket-disc-gearbox-car-isolated-white-scaled-1.jpg",
         "isFeatured": true
+    },
+    {
+        "id": 4,
+        "name": "Filtro de aire",
+        "price": 12500,
+        "stock": 10,
+        "category": "Filtros",
+        "image": "https://autorepuestoschacon.com/wp-content/uploads/2023/05/cropped-clutch-basket-disc-gearbox-car-isolated-white-scaled-1.jpg",
+        "isFeatured": false
+    },
+    {
+        "id": 5,
+        "name": "Freno",
+        "price": 1500,
+        "stock": 30,
+        "category": "Filtros",
+        "image": "https://autorepuestoschacon.com/wp-content/uploads/2023/05/cropped-clutch-basket-disc-gearbox-car-isolated-white-scaled-1.jpg",
+        "isFeatured": false
+    },
+    {
+        "id": 6,
+        "name": "Volante",
+        "price": 2000,
+        "stock": 30,
+        "category": "Filtros",
+        "image": "https://autorepuestoschacon.com/wp-content/uploads/2023/05/cropped-clutch-basket-disc-gearbox-car-isolated-white-scaled-1.jpg",                
+        "isFeatured": false
+    },
+    {
+        "id": 7,
+        "name": "Freno",
+        "price": 1500,
+        "stock": 30,
+        "category": "Filtros",
+        "image": "https://autorepuestoschacon.com/wp-content/uploads/2023/05/cropped-clutch-basket-disc-gearbox-car-isolated-white-scaled-1.jpg",
+        "isFeatured": false
+    },
+    {
+        "id": 8,
+        "name": "Volante",
+        "price": 2000,
+        "stock": 30,
+        "category": "Filtros",
+        "image": "https://autorepuestoschacon.com/wp-content/uploads/2023/05/cropped-clutch-basket-disc-gearbox-car-isolated-white-scaled-1.jpg",
+        "isFeatured": false
+    },
+    {
+        "id": 9,
+        "name": "Freno",
+        "price": 1500,
+        "stock": 30,
+        "category": "Filtros",
+        "image": "https://autorepuestoschacon.com/wp-content/uploads/2023/05/cropped-clutch-basket-disc-gearbox-car-isolated-white-scaled-1.jpg",
+        "isFeatured": false
+    },
+    {
+        "id": 10,
+        "name": "Volante",
+        "price": 2000,
+        "stock": 30,
+        "category": "Filtros",
+        "image": "https://autorepuestoschacon.com/wp-content/uploads/2023/05/cropped-clutch-basket-disc-gearbox-car-isolated-white-scaled-1.jpg",
+        "isFeatured": false
     }
 ]
