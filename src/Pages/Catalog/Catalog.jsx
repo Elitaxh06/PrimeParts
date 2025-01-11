@@ -2,6 +2,7 @@ import React from "react";
 import { useState, useEffect } from "react";
 import { PayPalButton } from "../../Components/PayPalButton/PayPalButton";
 import { Products } from "./Products";
+import { BlackButton } from "../../Components/BlackButton/BlackButton";
 function Catalog () {
     useEffect(() => {
         window.scrollTo({
@@ -13,6 +14,7 @@ function Catalog () {
     return (
         <section className="mt-28">
             <Products />
+            
             <div className="flex justify-center items-center mt-10">
                 <PayPalButton />
             </div>

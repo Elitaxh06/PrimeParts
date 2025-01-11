@@ -1,12 +1,13 @@
 import React, {useState} from "react";
 import { useCart } from "../../Context/CartContext";
 import { BlackButton } from "../BlackButton/BlackButton";
-
+import './Card.css'
 function Card ({name, price, image}) {
    
     return (
         <div>
             <img 
+                id="destaque-image"
                 src={image}
                 alt={`Imagen de ${name}`} 
             />

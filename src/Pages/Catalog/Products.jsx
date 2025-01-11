@@ -2,6 +2,7 @@ import React, {useState} from "react";
 import { Search } from "./Search";
 import products from "../../Services/Products.json"
 import { BlackButton } from "../../Components/BlackButton/BlackButton";
+import "./Product.css"
 function Products () {
     const [search, setSearch] = useState("") // es lo que escribe el usuario
     const [selectedCategory, setSelectedCategory] = useState([]) // son las casillas de las categorias
@@ -34,6 +35,7 @@ function Products () {
                 {filterBySearch && filterBySearch.map((product) => (
                     <div key={product.id} className="border p-4 rounded-3xl shadow hover:shadow-lg">
                         <img 
+                            id="product-image"
                             src={product.image}
                             alt={`Imagen de ${product.name}`} 
                             />
@@ -41,6 +43,7 @@ function Products () {
                         <p className="ml-2">${product.price}</p>
                         <BlackButton text="Agregar al carrito"/>
                     </div>
+                    
                 ))}
                 {filterBySearch.length === 0 && <h2 className="text-center text-2xl font-bold">No hay productos que coincidan con tu búsqueda</h2>}
             </div>
