@@ -1,6 +1,7 @@
 import React from "react";
 import { useState, useEffect } from "react";
 import { PayPalButton } from "../../Components/PayPalButton/PayPalButton";
+import { NavLink } from "react-router";
 import { Products } from "./Products";
 import { BlackButton } from "../../Components/BlackButton/BlackButton";
 function Catalog () {
@@ -16,7 +17,9 @@ function Catalog () {
             <Products />
             
             <div className="flex justify-center items-center mt-10">
-                <PayPalButton />
+                <NavLink to="/cart">
+                    <button className="bg-black text-white mt-4 h-8 hover:bg-neutral-700 w-40 rounded-md">Ver mi carrito</button>
+                </NavLink>
             </div>
         </section>
     )
