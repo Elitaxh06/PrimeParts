@@ -7,12 +7,14 @@ function Navbar() {
     const [menuOpen, setMenuOpen] = useState(true)
     return(
         <header className="flex justify-between items-center bg-white fixed top-0 left-0 w-full h-20 border-b border-slate-300 shadow-sm">
-            <h2 className="ml-5 font-bold text-3xl">PrimeParts</h2>
+            <NavLink to="/" end>
+                <h2 className="ml-5 font-bold text-3xl">PrimeParts</h2>
+            </NavLink>
             
             <ul id="navbar" className="flex mb-6">
                 <li className="ml-5"><NavLink to="/" end>Inicio</NavLink></li>
                 <li className="ml-5"><NavLink to='/products' end>Productos</NavLink></li>
-                <li className="ml-5">Nostros</li>
+                <li className="ml-5"><NavLink to='/about' end>Nosotros</NavLink></li>
                 <li className="ml-5">Contacto</li>
                 <li className='ml-5 mr-3' id='cart'>
                     <NavLink to="/cart" end>

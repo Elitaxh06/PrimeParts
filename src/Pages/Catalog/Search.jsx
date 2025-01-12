@@ -1,5 +1,5 @@
 import React, {useState} from "react";
-
+import { NavLink } from "react-router";
 function Search ({search, setSearch, selectedCategory, filterByCategory}) {
     
     return(
@@ -34,6 +34,9 @@ function Search ({search, setSearch, selectedCategory, filterByCategory}) {
                     type="checkbox" className="mr-2" />Herramientas
                 </label>
             </div>
+            <NavLink to="/cart">
+                    <button className="bg-black text-white mt-4 h-8 hover:bg-neutral-700 w-40 rounded-md">Ver mi carrito</button>
+                </NavLink>
         </aside>
     )
 }

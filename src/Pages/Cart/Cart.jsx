@@ -20,7 +20,7 @@ function Cart () {
     // })
 
     return (
-        <section className="mt-28">
+        <section className="mt-28 mb-12">
             <div className="ml-5">
                 <h1 className="text-4xl font-bold">Tu Carrito</h1>
             </div>

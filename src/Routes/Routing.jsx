@@ -6,6 +6,7 @@ import { Cart } from "../Pages/Cart/Cart";
 import { Catalog } from "../Pages/Catalog/Catalog";
 import { Footer } from "../Components/Footer/Footer";
 import { Navbar } from "../Components/Navbar/Navbar";
+import { About } from "../Pages/About/About";
 export const Routing = () => {
     return (
         <CartProvider>
@@ -13,8 +14,12 @@ export const Routing = () => {
             <Routes>
                 <Route path="/" element={<Home />} />
                 <Route path="/products" element={<Catalog />} />
+                <Route path="/about" element={<About />} />
                 <Route path="/cart" element={<Cart />} />
             </Routes>
+            <div>
+                
+            </div>
             <Footer />
         </CartProvider>
     )

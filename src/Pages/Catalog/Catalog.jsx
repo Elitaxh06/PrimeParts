@@ -13,7 +13,7 @@ function Catalog () {
         });
       }, []);
     return (
-        <section className="mt-28">
+        <section className="mt-28 mb-12">
             <Products />
             
             <div className="flex justify-center items-center mt-10">

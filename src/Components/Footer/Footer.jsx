@@ -4,7 +4,7 @@ import "./Footer.css"
 
 function Footer() {
     return (
-        <footer className="bg-slate-800 w-full mt-10 pt-5">
+        <footer className="bg-slate-800 w-full pt-5">
             <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-colds-1 lg:grid-cols-3 ml-16">
                 <div className="ml-4">
                     <h4 className="text-white">Sobre Nosotros</h4>
