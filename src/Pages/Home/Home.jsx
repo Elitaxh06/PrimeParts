@@ -5,12 +5,13 @@ import { Welcome } from "./Welcome"
 import { Pluses } from "./Pluses"
 import { FeaturedProducts } from "./FeaturedProducts";
 import { CallToAction } from "./CallToAction";
+import { CallToContact } from "./CallToContact";
 function Home () {
     useEffect(() => {
             window.scrollTo({
               top: 0,
               left: 0,
-              behavior: 'smooth', // Desplazamiento suave
+              // Desplazamiento suave
             });
           }, []);
     return(
@@ -23,6 +24,7 @@ function Home () {
             />
             <Pluses />
             <FeaturedProducts />
+            <CallToContact />
             <CallToAction />
         </main>
     )

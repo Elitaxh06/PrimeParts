@@ -9,7 +9,7 @@ function FeaturedProducts () {
     return(
         <section className="bg-slate-100 mt-14 pt-10 pb-10">
            
-            <h2 className="font-bold text-3xl  mb-5 text-center">Productos Destacados</h2>
+            <h2 className="font-bold text-3xl mb-5 text-center">Productos Destacados</h2>
             <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-1 lg:grid-cols-3 gap-10 p-10">
             {featured.map(product =>
             <div key={product.id} className="border p-4 rounded-3xl shadow hover:shadow-lg">

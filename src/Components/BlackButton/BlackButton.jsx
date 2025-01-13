@@ -1,5 +1,4 @@
 import React, {useState} from "react";
-import products from "../../Services/Products.json"
 import { useCart } from "../../Context/CartContext";
 import "./BlackButton.css"
 function BlackButton ({text}){

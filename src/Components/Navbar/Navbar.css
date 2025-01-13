@@ -3,6 +3,9 @@
 
 }
 
+
+
+
 @media (max-width: 569px){
     header{
         display: flex;
@@ -12,4 +15,5 @@
         margin-top: 25px;
     }
 }
+
 

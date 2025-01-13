@@ -8,7 +8,7 @@ function Footer() {
             <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-colds-1 lg:grid-cols-3 ml-16">
                 <div className="ml-4">
                     <h4 className="text-white">Sobre Nosotros</h4>
-                    <span className="span">PrimeParts es tu destine en linea para productos de alta calidad a precios increibles</span>
+                    <span className="span">PrimeParts es tu destino en linea para productos de alta calidad a precios increibles</span>
                 </div>
 
                 <div className="ml-4">
@@ -16,8 +16,9 @@ function Footer() {
                     <ul id="quick">
                         <li><NavLink to="/">Inicio</NavLink></li>
                         <li><NavLink to='/products'>Productos</NavLink></li>
-                        <li>Nosotros</li>
-                        <li>Contacto</li>
+                        <li><NavLink to='/about'>Nosotros</NavLink></li>
+                        <li><NavLink to='/cart'>Carrito</NavLink></li>
+                        <li><NavLink to='/contact'>Contacto</NavLink></li>
                     </ul>
                 </div>
 

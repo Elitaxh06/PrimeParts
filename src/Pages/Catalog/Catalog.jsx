@@ -16,11 +16,7 @@ function Catalog () {
         <section className="mt-28 mb-12">
             <Products />
             
-            <div className="flex justify-center items-center mt-10">
-                <NavLink to="/cart">
-                    <button className="bg-black text-white mt-4 h-8 hover:bg-neutral-700 w-40 rounded-md">Ver mi carrito</button>
-                </NavLink>
-            </div>
+           
         </section>
     )
 }
