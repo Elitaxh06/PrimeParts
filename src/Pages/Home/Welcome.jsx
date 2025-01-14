@@ -1,15 +1,17 @@
 import React, { useState} from "react";
 import { Button } from "../../Components/Button/Button";
-
+import "./Welcome.css"
 function Welcome({title, text, button}) {
     return(
-        <section className="bg-slate-100 mt-24 pb-24 pt-24 w-full flex justify-center items-center flex-col">
-                <h1 className="text-center font-bold text-5xl">{title}</h1>
+        <section className="bg-slate-100 pt-36 pb-24 w-full flex justify-center items-center flex-col mainBanner">
+            <h1 className="text-center font-bold text-5xl titleAnimation">{title}</h1>
             <div className="lg:w-full w text-center mt-2">
-            <span className="lg:text-xl text-md">{text}</span>
+            <span className="lg:text-xl text-md titleAnimation">{text}</span>
             </div>
             {button && (
-                <Button text="Ver Productos" url="/products"/>
+                <div className="titleAnimation">
+                    <Button text="Ver Productos" url="/products"/>
+                </div>
             )}
            
         </section>

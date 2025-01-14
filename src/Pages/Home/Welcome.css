@@ -1,0 +1,16 @@
+
+.titleAnimation{
+    animation-duration: 1.2s;
+    animation-name: slideInn;
+}
+
+@keyframes slideInn {
+    from{
+        margin-top: 5%;
+        opacity: 0;
+    }
+    to{
+        margin-top: 0%;
+        opacity: 1;
+    }
+}

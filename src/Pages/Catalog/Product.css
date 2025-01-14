@@ -2,3 +2,7 @@
     width: 100%;
     height: 50%;
 } */
+
+.cardContainere{
+    aspect-ratio: 4/5;
+}

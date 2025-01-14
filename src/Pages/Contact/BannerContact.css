@@ -1,4 +1,25 @@
 .banner{
-    background-image: linear-gradient(to right, #161616c2, #8f8f8fad);
+    background-image: linear-gradient(to right, #161616ef, #8f8f8fd5);
     color: #fff;
+}
+
+.banner h1, .span{
+
+    margin-bottom: 1rem;
+    animation-duration: 1.3s;
+    /* animation-delay: 1s; */
+    animation-name: slideIn;
+}
+
+@keyframes slideIn{
+    from{
+        margin-top: 5%;
+        opacity: 0;
+        /* width: 100%; */
+    }
+    to{
+        margin-top: 0%;
+        opacity: 1;
+        /* width: 100%; */
+    }
 }

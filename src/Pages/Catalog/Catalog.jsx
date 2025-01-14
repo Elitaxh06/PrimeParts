@@ -3,7 +3,6 @@ import { useState, useEffect } from "react";
 import { PayPalButton } from "../../Components/PayPalButton/PayPalButton";
 import { NavLink } from "react-router";
 import { Products } from "./Products";
-import { BlackButton } from "../../Components/BlackButton/BlackButton";
 function Catalog () {
     useEffect(() => {
         window.scrollTo({
@@ -15,7 +14,6 @@ function Catalog () {
     return (
         <section className="mt-28 mb-12">
             <Products />
-            
            
         </section>
     )

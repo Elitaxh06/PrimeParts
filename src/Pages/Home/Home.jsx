@@ -15,8 +15,7 @@ function Home () {
             });
           }, []);
     return(
-        <main className="mb-12">
-            <Navbar />
+        <main>
             <Welcome 
               title="Bienvenido a PrimeParts" 
               text="Descubre nuestra colección única de productos de alta calidad" 

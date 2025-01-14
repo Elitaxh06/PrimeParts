@@ -9,11 +9,11 @@ function About() {
         window.scrollTo({
           top: 0,
           left: 0,
-          behavior: 'smooth', // Desplazamiento suave
+        //   behavior: 'smooth', // Desplazamiento suave
         });
     }, []);
     return (
-        <section className="mt-28">
+        <section>
             {/* <Team /> */}
             <Welcome 
                 title="Sobre nosotros" 

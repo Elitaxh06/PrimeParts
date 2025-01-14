@@ -31,7 +31,7 @@ function Products () {
             selectedCategory={selectedCategory}
             filterByCategory={filterByCategory}
             />
-            <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 gap-10 p-10">
+            <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 gap-10 p-10 cardContainer">
                 {filterBySearch && filterBySearch.map((product) => (
                     <div key={product.id} className="border p-4 rounded-3xl shadow hover:shadow-lg">
                         <img 

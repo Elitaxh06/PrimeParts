@@ -2,3 +2,16 @@
     scale: 1.1;
     transition: all 0.3s ease-in-out;
 }
+
+#btnWhatsApp{
+    width: 50px;
+    height: 50px;
+}
+
+
+@media (max-width: 569px){
+    #btnWhatsApp{
+        width: 35px;
+        height: 35px;
+    }
+}
