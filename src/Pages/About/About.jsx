@@ -4,6 +4,8 @@ import { History } from "./History";
 import { Valores } from "./Valores";
 import { Team } from "./Team";
 import { ViewProducts } from "./ViewProducts";
+import { CartSection } from"../../Components/CartSection/CartSection";
+
 function About() {
     useEffect(() => {
         window.scrollTo({
@@ -14,6 +16,7 @@ function About() {
     }, []);
     return (
         <section>
+            <CartSection />
             {/* <Team /> */}
             <Welcome 
                 title="Sobre nosotros" 

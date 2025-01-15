@@ -1,8 +1,8 @@
 import React, {useState} from "react";
-import { useCart } from "../../Context/CartContext";
+
 import { BlackButton } from "../BlackButton/BlackButton";
 import './Card.css'
-function Card ({name, price, image}) {
+function Card ({name, price, image, product}) {
    
     return (
         <div>
@@ -13,7 +13,7 @@ function Card ({name, price, image}) {
             />
             <p className="mt-4 ml-2 font-bold text-xl">{name}</p>
             <p className="ml-2">${price}</p>
-            <BlackButton text="Agregar al carrito"/>
+            <BlackButton text="Agregar al carrito" product={product}/>
             
         </div>
     )

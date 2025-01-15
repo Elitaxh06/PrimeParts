@@ -1,7 +1,6 @@
 :root {
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
     overflow-y: scroll;    
-
 }
 
 @tailwind base;

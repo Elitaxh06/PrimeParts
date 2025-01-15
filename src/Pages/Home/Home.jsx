@@ -6,6 +6,7 @@ import { Pluses } from "./Pluses"
 import { FeaturedProducts } from "./FeaturedProducts";
 import { CallToAction } from "./CallToAction";
 import { CallToContact } from "./CallToContact";
+import { CartSection } from"../../Components/CartSection/CartSection";
 function Home () {
     useEffect(() => {
             window.scrollTo({
@@ -16,6 +17,7 @@ function Home () {
           }, []);
     return(
         <main>
+            <CartSection />
             <Welcome 
               title="Bienvenido a PrimeParts" 
               text="Descubre nuestra colección única de productos de alta calidad" 

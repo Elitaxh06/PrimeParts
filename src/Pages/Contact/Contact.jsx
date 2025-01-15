@@ -3,6 +3,8 @@ import { useForm, ValidationError } from '@formspree/react';
 import { Button } from "../../Components/Button/Button";
 import { BannerContact } from "./BannserContact";
 import { WhatsAppButton } from "../../Components/WhatsAppButton/WhatsAppButton";
+import { CartSection } from"../../Components/CartSection/CartSection";
+
 import "./Contact.css"
 function Contact() {
     useEffect(() => {
@@ -18,6 +20,7 @@ function Contact() {
     }
     return (
         <>
+        <CartSection />
         <BannerContact title="Contáctanos" text="Estamos aquí para ayudarte. No dudes en ponerte en contacto con nosotros para cualquier consulta o sugerencia."/>
         <section className="mt-28 ml-6 mb-16">
             <WhatsAppButton />

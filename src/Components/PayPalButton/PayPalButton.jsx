@@ -43,7 +43,7 @@ const PayPalButton = () => {
       <input 
         className="pp-C8BX6E3VSR6Y8 rounded-lg bg-yellow-300 w-40 mt-5 mb-3 hover:bg-yellow-400 cursor-pointer" 
         type="submit" 
-        value="Comprar ahora"
+        value="Donación"
         
         />
         </form>

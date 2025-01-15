@@ -41,7 +41,7 @@ function Products () {
                             />
                         <p className="mt-4 ml-2 font-bold text-xl">{product.name}</p>
                         <p className="ml-2">${product.price}</p>
-                        <BlackButton text="Agregar al carrito"/>
+                        <BlackButton text="Agregar al carrito" product={product}/>
                     </div>
                     
                 ))}

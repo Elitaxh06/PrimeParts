@@ -8,13 +8,11 @@ import { Footer } from "../Components/Footer/Footer";
 import { Navbar } from "../Components/Navbar/Navbar";
 import { About } from "../Pages/About/About";
 import { Contact } from "../Pages/Contact/Contact";
-import { CartSection } from "../Components/CartSection/CartSection";
 
 export const Routing = () => {
     return (
         <CartProvider>
             <Navbar />
-            <CartSection />
             <Routes>
                 <Route path="/" element={<Home />} />
                 <Route path="/products" element={<Catalog />} />
@@ -22,9 +20,6 @@ export const Routing = () => {
                 <Route path="/cart" element={<Cart />} />
                 <Route path="/contact" element={<Contact />} />
             </Routes>
-            <div>
-                
-            </div>
             <Footer />
         </CartProvider>
     )

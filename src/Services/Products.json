@@ -3,7 +3,7 @@
         "id": 1,
         "name": "Filtro de aire",
         "price": 12500,
-        "stock": 10,
+        "stock": 3,
         "category": "Repuestos",
         "image": "https://autorepuestoschacon.com/wp-content/uploads/2023/05/cropped-clutch-basket-disc-gearbox-car-isolated-white-scaled-1.jpg",
         "isFeatured": true
@@ -12,7 +12,7 @@
         "id": 2,
         "name": "Freno",
         "price": 1500,
-        "stock": 30,
+        "stock": 0,
         "category": "Accesorios",
         "image": "https://autorepuestoschacon.com/wp-content/uploads/2023/05/cropped-clutch-basket-disc-gearbox-car-isolated-white-scaled-1.jpg",
         "isFeatured": true
@@ -21,7 +21,7 @@
         "id": 3,
         "name": "Volante",
         "price": 2000,
-        "stock": 30,
+        "stock": 1,
         "category": "Herramientas",
         "image": "https://autorepuestoschacon.com/wp-content/uploads/2023/05/cropped-clutch-basket-disc-gearbox-car-isolated-white-scaled-1.jpg",
         "isFeatured": true
@@ -30,7 +30,7 @@
         "id": 4,
         "name": "Filtro de aire",
         "price": 12500,
-        "stock": 10,
+        "stock": 7,
         "category": "Repustos",
         "image": "https://autorepuestoschacon.com/wp-content/uploads/2023/05/cropped-clutch-basket-disc-gearbox-car-isolated-white-scaled-1.jpg",
         "isFeatured": false
@@ -39,7 +39,7 @@
         "id": 5,
         "name": "Freno",
         "price": 1500,
-        "stock": 30,
+        "stock": 5,
         "category": "Herramientas",
         "image": "https://autorepuestoschacon.com/wp-content/uploads/2023/05/cropped-clutch-basket-disc-gearbox-car-isolated-white-scaled-1.jpg",
         "isFeatured": false
@@ -57,7 +57,7 @@
         "id": 7,
         "name": "Freno",
         "price": 1500,
-        "stock": 30,
+        "stock": 0,
         "category": "Repustos",
         "image": "https://autorepuestoschacon.com/wp-content/uploads/2023/05/cropped-clutch-basket-disc-gearbox-car-isolated-white-scaled-1.jpg",
         "isFeatured": false
@@ -75,7 +75,7 @@
         "id": 9,
         "name": "Freno",
         "price": 1500,
-        "stock": 30,
+        "stock": 0,
         "category": "Herramientas",
         "image": "https://autorepuestoschacon.com/wp-content/uploads/2023/05/cropped-clutch-basket-disc-gearbox-car-isolated-white-scaled-1.jpg",
         "isFeatured": false
@@ -84,7 +84,7 @@
         "id": 10,
         "name": "Volante",
         "price": 2000,
-        "stock": 30,
+        "stock": 10,
         "category": "Accesorios",
         "image": "https://autorepuestoschacon.com/wp-content/uploads/2023/05/cropped-clutch-basket-disc-gearbox-car-isolated-white-scaled-1.jpg",
         "isFeatured": false

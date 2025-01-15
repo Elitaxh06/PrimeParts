@@ -11,12 +11,12 @@ function Navbar() {
                 <h2 className="ml-5 font-bold text-3xl">PrimeParts</h2>
             </NavLink>
             
-            <ul id="navbar" className="flex mb-6">
-                <li className="ml-5 li"><NavLink to="/" end>Inicio</NavLink></li>
-                <li className="ml-5 li"><NavLink to='/products' end>Productos</NavLink></li>
-                <li className="ml-5 li"><NavLink to='/about' end>Nosotros</NavLink></li>
-                <li className="ml-5 li"><NavLink to='/contact' end>Contacto</NavLink></li>
-                <li className='ml-5 li mr-3' id='cart'>
+            <ul id="navbar" className="flex mb-6 font-bold">
+                <li className="ml-5 li hover:text-slate-500 hover:scale-110"><NavLink to="/" end>Inicio</NavLink></li>
+                <li className="ml-5 li hover:text-slate-500 hover:scale-110"><NavLink to='/products' end>Productos</NavLink></li>
+                <li className="ml-5 li hover:text-slate-500 hover:scale-110"><NavLink to='/about' end>Nosotros</NavLink></li>
+                <li className="ml-5 li hover:text-slate-500 hover:scale-110"><NavLink to='/contact' end>Contacto</NavLink></li>
+                <li className='ml-5 li hover:bg-white mr-3' id='cart'>
                     <NavLink to="/cart" end>
 
                         <div className="flex mr-4 ">
