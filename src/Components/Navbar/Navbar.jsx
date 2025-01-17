@@ -6,8 +6,8 @@ function Navbar() {
     const { cart } = useCart()
     return(
         <header className="flex justify-between items-center bg-white fixed top-0 left-0 w-full h-20 border-b border-slate-300 shadow-sm z-50">
-            <NavLink to="/" end>
-                <h2 className="ml-5 font-bold text-3xl">PrimeParts</h2>
+            <NavLink to="/" end className="sm:pointer-events-auto pointer-events-none">
+                <h2 className="ml-5 font-bold text-3xl titulo">PrimeParts</h2>
             </NavLink>
             
             <ul id="navbar" className="flex mb-6 font-bold">

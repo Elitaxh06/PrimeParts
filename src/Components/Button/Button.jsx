@@ -8,7 +8,11 @@ export function Button ({text,onClick, url}){
             onClick()
         }
         if(url){
-            navigate(url)
+            if(url === "-1"){
+                navigate(-1)
+            }else{
+                navigate(url)
+            }
         }
     }
     

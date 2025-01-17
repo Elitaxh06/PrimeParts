@@ -1,5 +1,5 @@
 import React, {useEffect} from "react";
-import { useParams } from "react-router";
+import { useNavigate, useParams } from "react-router";
 import { NavLink } from "react-router";
 import products from "../../Services/Products.json"
 import { Button } from "../Button/Button";
@@ -27,7 +27,7 @@ function InfoProducts() {
     }
     return (
         <section className="mt-24 mb-28 ml-4 mr-4">
-            <Button text="Volver" url="/products"/>
+            <Button text="Volver" url={-1}/>
             <div className="mt-5 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-2">
                 <div className="border boder-slate-600">
                     <img src={item.image} alt={`Imagen de ${item.name}`} className="w-full h-full object-cover" />
