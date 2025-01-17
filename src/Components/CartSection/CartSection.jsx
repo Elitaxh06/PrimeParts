@@ -1,10 +1,9 @@
 import React, { useState } from "react";
 import { useCart } from "../../Context/CartContext";
 import { NavLink } from "react-router"
-import { PayPalButton } from "../PayPalButton/PayPalButton";
 import "./CartSection.css"
 function CartSection() {
-    const { cart, addToCart, removeFromCart, clearCart, removeItem } = useCart()
+    const { cart, addToCart, removeFromCart, removeItem } = useCart()
     const [open, setOpen] = useState(false)
     const total = cart.reduce((acc, item) => acc + item.price, 0)
     const agregatedCart = cart.reduce((acc,item) => {
@@ -21,12 +20,12 @@ function CartSection() {
         <>
         {cart.length !== 0 && (
             <div>
-                <button onClick={() => setOpen(!open)} className={`fixed  top-16 lg:top-20  right-2  z-50 font-bold text-sm text-white mt-4 h-8 ${!open ? "bg-green-500 hover:bg-green-600" : "bg-red-500 hover:bg-red-600"}  hover:scale-110  w-20 rounded-md`}>    {open ? 'Cerrar' : 'Ver Pedido'}
+                <button onClick={() => setOpen(!open)} className={`fixed  top-16 lg:top-20  right-2  z-50 font-bold text-sm text-white mt-4 h-8 ${!open ? "bg-blue-500 hover:bg-blue-600" : "bg-red-500 hover:bg-red-600"}  hover:scale-110  w-20 rounded-md`}>    {open ? 'Cerrar' : 'Ver Pedido'}
                 </button>
 
             {open && (
 
-            <section className="mt-20 mb-12 fixed top-0 z-40 w-44 right-0 border-l border-slate-600 shadow-lg bg-white overflow-y-auto scrol">
+            <section className="mt-20 mb-12 fixed top-0 z-40 w-44 right-0 border-l border-slate-600 shadow-lg bg-white overflow-y-auto scrol cart-window">
             <div className="flex justify-start place-items-start">
             </div>
                 <div className="lg:mt-14 mt-8">
@@ -39,13 +38,18 @@ function CartSection() {
                     
                     {agregatedCart.map((item, index)=>(
                         <div key={index}>
-                            <div className="flex flex-col bg-slate-100 mb-1 rounded-lg">
-                                <div className="flex justify-between">
-                                    <p>
-                                        <span className="font-bold">{item.name}</span> <br />
-                                        <span className="text-slate-600">₡{item.price} </span>
+                            <div className="flex flex-col bg-slate-100 mb-2 rounded-lg">
+                                <div className="flex flex-col">
+                                    <p className="flex justify-between">
+                                        <span className="font-bold ml-2">{item.name}</span>
+                                        <button className="hover:scale-110 ml-3 hover:text-red-500 mr-1" onClick={() => removeFromCart(item.id)}>
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" className="bi bi-trash" viewBox="0 0 16 16">
+                                                <path d="M5.5 5.5A.5.5 0 0 1 6 6v6a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5m2.5 0a.5.5 0 0 1 .5.5v6a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5m3 .5a.5.5 0 0 0-1 0v6a.5.5 0 0 0 1 0z"/>
+                                                <path d="M14.5 3a1 1 0 0 1-1 1H13v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V4h-.5a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1H6a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1h3.5a1 1 0 0 1 1 1zM4.118 4 4 4.059V13a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1V4.059L11.882 4zM2.5 3h11V2h-11z"/>
+                                            </svg>
+                                        </button>
                                      </p>
-
+                                    <p className="text-slate-600 ml-2">₡{item.price} </p>
                                 </div>
                                 <div className="flex justify-around items-center mb-1 mt-2 rounded-md">
                                     {item.length === 1 ?(
@@ -65,7 +69,7 @@ function CartSection() {
                     </div>
                     <div className="flex justify-between mt-1">
                         <p>Envio</p>
-                        <p>Envio gratis</p>
+                        <p>Gratis</p>
                     </div>
                     <div className="flex justify-between border-t border-slate-300 mt-2">
                         <p>Total</p>
@@ -77,7 +81,6 @@ function CartSection() {
                 <NavLink to="/cart">
                     <button className="bg-black text-white mt-5 h-8 hover:bg-neutral-700 w-40 rounded-md">Ver mi carrito</button>
                 </NavLink>
-                    {/* <PayPalButton /> */}
             </div>
         </section>
             )}

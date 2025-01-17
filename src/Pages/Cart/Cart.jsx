@@ -46,16 +46,15 @@ function Cart () {
                             </div>
                             <div className="flex gap-2">
                                 {item.length === 1 ? (
-                                    <button disabled onClick={() => removeItem(item)} className="bg-slate-50 border border-slate-600 text-black flex items-center justify-center w-8 h-7 rounded-md font-bold text-xl">-</button>
+                                    <button disabled onClick={() => removeItem(item)} className="bg-slate-50 border border-slate-600 text-black flex items-center justify-center w-8 rounded-md font-bold text-xl">-</button>
 
                                 ): (
-                                    <button onClick={() => removeItem(item)} className="bg-slate-50 border border-slate-600 text-black flex items-center justify-center hover:bg-slate-300 w-8 h-7 rounded-md font-bold text-xl">-</button>
+                                    <button onClick={() => removeItem(item)} className="bg-slate-50 border border-slate-600 text-black flex items-center justify-center hover:bg-slate-200 w-8 rounded-md font-bold text-xl">-</button>
                                 )}
-
-                                <p>{item.length}</p>
-                                <button onClick={() => addToCart(item)} className="bg-slate-50 border border-slate-600 text-black flex items-center justify-center hover:bg-slate-300 w-8 h-7 rounded-md font-bold text-xl">+</button>
+                                <p className="font-bold">{item.length}</p>
+                                <button onClick={() => addToCart(item)} className="bg-slate-50 border border-slate-600 text-black flex items-center justify-center hover:bg-slate-200 w-8 h-7 rounded-md font-bold text-xl">+</button>
                                 
-                                <button className="hover:scale-110 ml-3" onClick={() => removeFromCart(item.id)}>
+                                <button className="hover:scale-110 ml-3 hover:text-red-500" onClick={() => removeFromCart(item.id)}>
                                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" className="bi bi-trash" viewBox="0 0 16 16">
                                     <path d="M5.5 5.5A.5.5 0 0 1 6 6v6a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5m2.5 0a.5.5 0 0 1 .5.5v6a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5m3 .5a.5.5 0 0 0-1 0v6a.5.5 0 0 0 1 0z"/>
                                     <path d="M14.5 3a1 1 0 0 1-1 1H13v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V4h-.5a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1H6a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1h3.5a1 1 0 0 1 1 1zM4.118 4 4 4.059V13a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1V4.059L11.882 4zM2.5 3h11V2h-11z"/>

@@ -1,5 +1,4 @@
-import React, {useState} from "react";
-
+import React from "react";
 import { BlackButton } from "../BlackButton/BlackButton";
 import './Card.css'
 function Card ({name, price, image, product}) {

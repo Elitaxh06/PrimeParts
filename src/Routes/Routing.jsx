@@ -8,6 +8,7 @@ import { Footer } from "../Components/Footer/Footer";
 import { Navbar } from "../Components/Navbar/Navbar";
 import { About } from "../Pages/About/About";
 import { Contact } from "../Pages/Contact/Contact";
+import { InfoProducts } from "../Components/InfoProducts/InfoProducts";
 
 export const Routing = () => {
     return (
@@ -19,6 +20,7 @@ export const Routing = () => {
                 <Route path="/about" element={<About />} />
                 <Route path="/cart" element={<Cart />} />
                 <Route path="/contact" element={<Contact />} />
+                <Route path="/info-product/:itemId" element={<InfoProducts />} />
             </Routes>
             <Footer />
         </CartProvider>

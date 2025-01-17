@@ -2,7 +2,9 @@ import React, {useState} from "react";
 import { Search } from "./Search";
 import products from "../../Services/Products.json"
 import { BlackButton } from "../../Components/BlackButton/BlackButton";
+import {ButtonMoreInfo} from "../../Components/ButtonMoreInfo/ButtonMoreInfo";
 import "./Product.css"
+import { NavLink } from "react-router";
 function Products () {
     const [search, setSearch] = useState("") // es lo que escribe el usuario
     const [selectedCategory, setSelectedCategory] = useState([]) // son las casillas de las categorias
@@ -34,14 +36,19 @@ function Products () {
             <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 gap-10 p-10 cardContainer">
                 {filterBySearch && filterBySearch.map((product) => (
                     <div key={product.id} className="border p-4 rounded-3xl shadow hover:shadow-lg">
-                        <img 
-                            id="product-image"
-                            src={product.image}
-                            alt={`Imagen de ${product.name}`} 
+                        <NavLink to={`/info-product/${product.url}`}  end>
+                            <img 
+                                id="product-image"
+                                src={product.image}
+                                alt={`Imagen de ${product.name}`} 
                             />
+                        </NavLink>
                         <p className="mt-4 ml-2 font-bold text-xl">{product.name}</p>
                         <p className="ml-2">${product.price}</p>
                         <BlackButton text="Agregar al carrito" product={product}/>
+                        <NavLink to={`/info-product/${product.url}`}>
+                            <ButtonMoreInfo text="Ver más"/>    
+                        </NavLink>
                     </div>
                     
                 ))}

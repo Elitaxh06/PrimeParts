@@ -2,91 +2,89 @@
     {
         "id": 1,
         "name": "Filtro de aire",
-        "price": 12500,
+        "price": 1250,
+        "description" : "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electroni",
         "stock": 3,
         "category": "Repuestos",
         "image": "https://autorepuestoschacon.com/wp-content/uploads/2023/05/cropped-clutch-basket-disc-gearbox-car-isolated-white-scaled-1.jpg",
-        "isFeatured": true
+        "isFeatured": true,
+        "url" : "1"
     },
     {
         "id": 2,
         "name": "Freno",
         "price": 1500,
+        "description" : "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electroni",
         "stock": 0,
         "category": "Accesorios",
         "image": "https://autorepuestoschacon.com/wp-content/uploads/2023/05/cropped-clutch-basket-disc-gearbox-car-isolated-white-scaled-1.jpg",
-        "isFeatured": true
+        "isFeatured": true,
+        "url" : "2"
     },
     {
         "id": 3,
         "name": "Volante",
         "price": 2000,
+        "description" : "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electroni",
         "stock": 1,
         "category": "Herramientas",
         "image": "https://autorepuestoschacon.com/wp-content/uploads/2023/05/cropped-clutch-basket-disc-gearbox-car-isolated-white-scaled-1.jpg",
-        "isFeatured": true
+        "isFeatured": true,
+        "url" : "3"
     },
     {
         "id": 4,
         "name": "Filtro de aire",
-        "price": 12500,
+        "price": 1250,
+        "description" : "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electroni",
         "stock": 7,
         "category": "Repustos",
         "image": "https://autorepuestoschacon.com/wp-content/uploads/2023/05/cropped-clutch-basket-disc-gearbox-car-isolated-white-scaled-1.jpg",
-        "isFeatured": false
+        "isFeatured": false,
+        "url" : "4"
     },
     {
         "id": 5,
         "name": "Freno",
         "price": 1500,
+        "description" : "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electroni",
         "stock": 5,
         "category": "Herramientas",
         "image": "https://autorepuestoschacon.com/wp-content/uploads/2023/05/cropped-clutch-basket-disc-gearbox-car-isolated-white-scaled-1.jpg",
-        "isFeatured": false
+        "isFeatured": false,
+        "url" : "5"
     },
     {
         "id": 6,
         "name": "Volante",
         "price": 2000,
+        "description" : "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electroni",
         "stock": 30,
         "category": "Repuestos",
         "image": "https://autorepuestoschacon.com/wp-content/uploads/2023/05/cropped-clutch-basket-disc-gearbox-car-isolated-white-scaled-1.jpg",                
-        "isFeatured": false
+        "isFeatured": false,
+        "url" : "6"
     },
     {
         "id": 7,
         "name": "Freno",
         "price": 1500,
+        "description" : "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electroni",
         "stock": 0,
         "category": "Repustos",
         "image": "https://autorepuestoschacon.com/wp-content/uploads/2023/05/cropped-clutch-basket-disc-gearbox-car-isolated-white-scaled-1.jpg",
-        "isFeatured": false
+        "isFeatured": false,
+        "url" : "7"
     },
     {
         "id": 8,
         "name": "Volante",
         "price": 2000,
+        "description" : "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electroni",
         "stock": 30,
         "category": "Herramientas",
         "image": "https://autorepuestoschacon.com/wp-content/uploads/2023/05/cropped-clutch-basket-disc-gearbox-car-isolated-white-scaled-1.jpg",
-        "isFeatured": false
-    },
-    {
-        "id": 9,
-        "name": "Freno",
-        "price": 1500,
-        "stock": 0,
-        "category": "Herramientas",
-        "image": "https://autorepuestoschacon.com/wp-content/uploads/2023/05/cropped-clutch-basket-disc-gearbox-car-isolated-white-scaled-1.jpg",
-        "isFeatured": false
-    },
-    {
-        "id": 10,
-        "name": "Volante",
-        "price": 2000,
-        "stock": 10,
-        "category": "Accesorios",
-        "image": "https://autorepuestoschacon.com/wp-content/uploads/2023/05/cropped-clutch-basket-disc-gearbox-car-isolated-white-scaled-1.jpg",
-        "isFeatured": false
+        "isFeatured": false,
+        "url" : "8"
     }
 ]

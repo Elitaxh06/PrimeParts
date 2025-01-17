@@ -1,21 +1,20 @@
-import React, { useState } from 'react';
+import React from 'react';
 import { useCart } from '../../Context/CartContext';
 import "./Navbar.css"
 import { NavLink } from 'react-router';
 function Navbar() {
     const { cart } = useCart()
-    const [menuOpen, setMenuOpen] = useState(true)
     return(
-        <header className="flex justify-between items-center bg-white fixed top-0 left-0 w-full h-20 border-b border-slate-300 shadow-sm">
+        <header className="flex justify-between items-center bg-white fixed top-0 left-0 w-full h-20 border-b border-slate-300 shadow-sm z-50">
             <NavLink to="/" end>
                 <h2 className="ml-5 font-bold text-3xl">PrimeParts</h2>
             </NavLink>
             
             <ul id="navbar" className="flex mb-6 font-bold">
-                <li className="ml-5 li hover:text-slate-500 hover:scale-110"><NavLink to="/" end>Inicio</NavLink></li>
-                <li className="ml-5 li hover:text-slate-500 hover:scale-110"><NavLink to='/products' end>Productos</NavLink></li>
-                <li className="ml-5 li hover:text-slate-500 hover:scale-110"><NavLink to='/about' end>Nosotros</NavLink></li>
-                <li className="ml-5 li hover:text-slate-500 hover:scale-110"><NavLink to='/contact' end>Contacto</NavLink></li>
+                <li className="ml-5 li hover:text-blue-500 hover:scale-110 active:text-blue-500"><NavLink to="/" end>Inicio</NavLink></li>
+                <li className="ml-5 li hover:text-blue-500 hover:scale-110 active:text-blue-500"><NavLink to='/products' end>Productos</NavLink></li>
+                <li className="ml-5 li hover:text-blue-500 hover:scale-110 active:text-blue-500"><NavLink to='/about' end>Nosotros</NavLink></li>
+                <li className="ml-5 li hover:text-blue-500 hover:scale-110 active:text-blue-500"><NavLink to='/contact' end>Contacto</NavLink></li>
                 <li className='ml-5 li hover:bg-white mr-3' id='cart'>
                     <NavLink to="/cart" end>
 

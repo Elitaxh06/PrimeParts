@@ -1,6 +1,6 @@
 import React from "react";
 import "./History.css"
-import taller from "../../assets/img/taller.webp";
+import taller from "../../assets/img/taller.png";
 function History() {
     return (
         <section className="mt-2 lg:ml-20 md:ml-140 sm:ml-5 ml-2 mr-5">

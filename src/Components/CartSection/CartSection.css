@@ -1,3 +1,8 @@
 .scrol{
     height: 90%;
 }
+
+.cart-window {
+    background-image: linear-gradient(to bottom, #b3ecff, #ebebeb); /* Azul claro a blanco */
+  }
+  
