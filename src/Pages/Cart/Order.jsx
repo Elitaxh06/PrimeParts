@@ -6,15 +6,28 @@ function Order () {
     const total = cart.reduce((total, item) => total + item.price, 0)
     const messageWhatsApp = () => {
         // const total = cart.reduce((total, item) => total + item.price, 0)
-        const cartMessage = cart
-        .map((product)=> `${product.name} - $${product.price}`)
+        const groupedCart = cart.reduce((acc, item)=>{
+            if(acc[item.id]){
+                acc[item.id].cantidad += 1
+            }else{
+                acc[item.id] = { ...item, cantidad: 1}
+            }
+            return acc
+        },{})
+        const cartMessage = Object.values(groupedCart)
+            .map((item)=>
+                item.cantidad > 1
+                ? `${item.name} x ${item.cantidad} - ₡${item.price * item.cantidad}`
+                : `${item.name} - ₡${item.price}`)
         .join('\n')
-        let message
-        if(cart.length === 1){
-            message = `¡Hola! Estoy interesado en el siguiente producto:\n\n${cartMessage}\n\n Total: $${total}\n\nGracias!`
-        }else{
-            message = `¡Hola! Estoy interesado en los siguientes productos:\n\n${cartMessage}\n\n Total: $${total}\n\nGracias!`
-        }
+        const total = Object.values(groupedCart).reduce(
+            (total, product) => total + product.price * product.cantidad,
+            0
+        );
+
+        let message = cart.length === 1
+        ? `¡Hola! Estoy interesado en el siguiente producto:\n\n${cartMessage}\n\nTotal: $${total}\n\nGracias!`
+        : `¡Hola! Estoy interesado en los siguientes productos:\n\n${cartMessage}\n\nTotal: $${total}\n\nGracias!`;
         const url = `https://wa.me/50683745485?text=${encodeURIComponent(message)}`
         window.open(url, '_blank')
         }
