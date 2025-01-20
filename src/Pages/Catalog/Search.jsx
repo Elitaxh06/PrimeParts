@@ -13,7 +13,7 @@ function Search ({search, setSearch, selectedCategory, filterByCategory}) {
               onChange={(e) => setSearch(e.target.value)}
             />
             
-            <h2 className="text-2xl font-bold mb-4">Categoria</h2>
+            <h2 className="text-2xl font-bold mb-4">Categoría</h2>
             <div>
                 <label className="block">
                     <input type="checkbox" 

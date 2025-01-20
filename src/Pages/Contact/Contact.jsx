@@ -39,11 +39,11 @@ function Contact() {
                     <ValidationError prefix="Name" field="name" errors={state.errors} />
 
                   <label htmlFor="email">
-                    Email Address
+                    Correo Electronico
                   </label>
                   <input
                     className="in border border-bg-gray-200 mb-4 mt-2 rounded-md p-2 block text-sm font-medium text-gray-700"
-                    placeholder="Email"
+                    placeholder="Ingresa tu correo electronico"
                     id="email"
                     type="email" 
                     name="email"
@@ -57,6 +57,7 @@ function Contact() {
                   <textarea
                     className="in border border-bg-gray-200 mt-2 rounded-md p-2 block mb-4 text-sm font-medium text-gray-700"
                     id="message"
+                    placeholder="Escribe tu mensaje"
                     name="message"
                     />
                   <ValidationError 

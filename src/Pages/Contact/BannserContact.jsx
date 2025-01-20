@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React from "react";
 import "./BannerContact.css"
 function BannerContact({title, text}) {
     return(

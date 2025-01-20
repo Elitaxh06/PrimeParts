@@ -2,7 +2,18 @@
     width: 100%;
     height: 50%;
 } */
+ .cardContainer{
+    animation-duration: 1.2s;
+    animation-name: slideProducts;
+}
 
-.cardContainere{
-    aspect-ratio: 4/5;
+@keyframes slideProducts {
+    from{
+        margin-left: 60%;
+        opacity: 0;
+    }
+    to{
+        margin-left: 0%;
+        opacity: 1;
+    }
 }
