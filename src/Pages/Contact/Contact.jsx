@@ -1,10 +1,9 @@
 import React, { useEffect, useState } from "react";
 import { useForm, ValidationError } from '@formspree/react';
-import { Button } from "../../Components/Button/Button";
 import { BannerContact } from "./BannserContact";
 import { WhatsAppButton } from "../../Components/WhatsAppButton/WhatsAppButton";
 import { CartSection } from"../../Components/CartSection/CartSection";
-
+import { ContactConfirmation } from "./ContactConfirmation";
 import "./Contact.css"
 function Contact() {
     useEffect(() => {
@@ -14,9 +13,9 @@ function Contact() {
           // behavior: 'smooth', // Desplazamiento suave
         });
       }, []);
-    const [state, handleSubmit] = useForm("xyzzoezd");
+    const [state, handleSubmit] = useForm("mpwwvobj");
     if (state.succeeded) {
-        return <div className="mb-48 mt-48 flex flex-col justify-center items-center"><p className="text-center text-2xl font-bold">¡Gracias por contactarnos! Te responderemos pronto.</p> <Button text="Volver a la tienda" url="/"/></div>;
+        return <ContactConfirmation />
     }
     return (
         <>
@@ -78,13 +77,13 @@ function Contact() {
                       </svg>
                       Correo Electronico
                       </p>
-                      <p className="mb-3 ml-6 text-sm text-slate-500">info@primeparts.com</p>
-                      <p className="flex items-center font-bold">
+                      <p className="mb-3 ml-6 text-sm text-slate-500">pizarroteb06@outlook.com</p>
+                      {/* <p className="flex items-center font-bold">
                       <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" className="mr-2 bi bi-telephone" viewBox="0 0 16 16">
                         <path d="M3.654 1.328a.678.678 0 0 0-1.015-.063L1.605 2.3c-.483.484-.661 1.169-.45 1.77a17.6 17.6 0 0 0 4.168 6.608 17.6 17.6 0 0 0 6.608 4.168c.601.211 1.286.033 1.77-.45l1.034-1.034a.678.678 0 0 0-.063-1.015l-2.307-1.794a.68.68 0 0 0-.58-.122l-2.19.547a1.75 1.75 0 0 1-1.657-.459L5.482 8.062a1.75 1.75 0 0 1-.46-1.657l.548-2.19a.68.68 0 0 0-.122-.58zM1.884.511a1.745 1.745 0 0 1 2.612.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.68.68 0 0 0 .178.643l2.457 2.457a.68.68 0 0 0 .644.178l2.189-.547a1.75 1.75 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.6 18.6 0 0 1-7.01-4.42 18.6 18.6 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877z"/>
                       </svg>
                         Teléfono</p>
-                    <p className="mb-3 ml-6 text-sm text-slate-500">(+506) 83745484</p>
+                    <p className="mb-3 ml-6 text-sm text-slate-500">(+506) 83745484</p> */}
 
                     <p className="flex items-center font-bold">
                     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" className="mr-2 bi bi-chat" viewBox="0 0 16 16">
@@ -92,9 +91,7 @@ function Contact() {
                     </svg>
                       WhatsApp
                     </p>
-                    <p className="mb-3 ml-6 text-sm text-slate-500">+506 83745484</p>
-
-
+                    <p href="https://wa.me/50683745484" target="_blank" className="mb-3 ml-6 text-sm text-slate-500">+506 83745484</p>
                     <p className="font-bold text-xl">Horario de Atención</p>
                     <p>
                         Lunes a viernes de 9:00 AM - 10:00 PM <br />

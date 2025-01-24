@@ -6,6 +6,7 @@ export const CartProvider = ({children}) => {
     const [cart, setCart] = useState([])
     const addToCart = (product) => {
         setCart((prevCart)=>[...prevCart, product])
+        return product
     }
 
     const removeFromCart = (productId) => setCart((prev) => prev.filter((item) => item.id !== productId));
@@ -20,6 +21,7 @@ export const CartProvider = ({children}) => {
                 newCart.splice(index, 1);
                 return newCart;
             }
+            console.log("lkajflkasjkfs")
             return prevCart;
         });
     };

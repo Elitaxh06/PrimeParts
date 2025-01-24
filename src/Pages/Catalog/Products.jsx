@@ -9,7 +9,7 @@ function Products () {
     const [search, setSearch] = useState("") // es lo que escribe el usuario
     const [selectedCategory, setSelectedCategory] = useState([]) // son las casillas de las categorias
     const [loading, setLoading] = useState(false)
-    console.log(loading)
+    
     const handleImageLoad = () => {
         console.log("Imagen cargada")
         setLoading(false)
@@ -49,14 +49,21 @@ function Products () {
                     <div key={product.id} className="border p-4 rounded-3xl shadow hover:shadow-lg">
                         <NavLink to={`/info-product/${product.url}`}  end>
                             <img 
-                                onLoad={() => setLoading(false)}    
+                                // onLoad={() => setLoading(false)}    
                                 id="product-image"
                                 src={product.image}
                                 alt={`Imagen de ${product.name}`} 
                                 />
                         </NavLink>
                         <p className="mt-4 ml-2 font-bold text-xl">{product.name}</p>
-                        <p className="ml-2">${product.price}</p>
+                        <div className="flex justify-between">
+                            <p className="ml-2">₡{product.price}</p>
+                            {product.stock === 1 ? (
+                                <p className="text-slate-500">{product.stock} unidad</p>
+                            ): (
+                                <p className="text-slate-500">{product.stock} unidades</p>
+                            )}
+                        </div>
                         <BlackButton text="Agregar al carrito" product={product}/>
                         <NavLink to={`/info-product/${product.url}`}>
                             <ButtonMoreInfo text="Ver más"/>    

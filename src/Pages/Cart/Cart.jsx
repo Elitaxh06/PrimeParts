@@ -1,10 +1,9 @@
 import React, { useEffect } from "react";
 import { useCart } from "../../Context/CartContext";
 import { NavLink } from "react-router";
-import { PayPalButton } from "../../Components/PayPalButton/PayPalButton";
 import { Order } from "./Order";
 function Cart () {
-    const { cart, addToCart, removeItem, removeFromCart, clearCart } = useCart()
+    const { cart, addToCart, removeItem, removeFromCart } = useCart()
 
     const agregatedCart = cart.reduce((acc,item) => {
         const foundItem = acc.find((i) => i.id === item.id)
@@ -30,7 +29,7 @@ function Cart () {
             <div className="ml-5">
                 <h1 className="text-4xl font-bold">Tu Carrito</h1>
             </div>
-            {console.log(cart, `elemento`)}
+
 
             {cart.length > 0 && (
                 <article className="flex flex-col md:flex-row pt-5">

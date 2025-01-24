@@ -16,16 +16,17 @@ function CartSection() {
         }
         return acc
     }, [])
+
     return (
         <>
         {cart.length !== 0 && (
             <div>
-                <button onClick={() => setOpen(!open)} className={`fixed  top-16 lg:top-20  right-2  z-50 font-bold text-sm text-white mt-4 h-8 ${!open ? "bg-blue-500 hover:bg-blue-600" : "bg-red-500 hover:bg-red-600"}  hover:scale-110  w-20 rounded-md`}>    {open ? 'Cerrar' : 'Ver Pedido'}
+                <button onClick={() => setOpen(!open)} className={`fixed  top-16 lg:top-20  right-2 xl:right-5   z-50 font-bold text-sm text-white mt-4 h-8 ${!open ? "bg-blue-500 hover:bg-blue-600" : "bg-red-500 hover:bg-red-600"}  hover:scale-110  w-20 rounded-md`}>    {open ? 'Cerrar' : 'Ver Pedido'}
                 </button>
 
             {open && (
 
-            <section className="mt-20 mb-12 fixed top-0 z-40 w-44 right-0 border-l border-slate-600 shadow-lg bg-white overflow-y-auto scrol cart-window">
+            <section className="mt-20 mb-12 fixed top-0 z-40 w-48 right-0 border-l border-slate-600 shadow-lg bg-white overflow-y-auto scrol cart-window">
             <div className="flex justify-start place-items-start">
             </div>
                 <div className="lg:mt-14 mt-8">
@@ -41,8 +42,8 @@ function CartSection() {
                             <div className="flex flex-col bg-slate-100 mb-2 rounded-lg">
                                 <div className="flex flex-col">
                                     <p className="flex justify-between">
-                                        <span className="font-bold ml-2">{item.name}</span>
-                                        <button className="hover:scale-110 ml-3 hover:text-red-500 mr-1" onClick={() => removeFromCart(item.id)}>
+                                        <span className="font-bold ml-1">{item.name}</span>
+                                        <button className=" hover:text-red-500 mr-1" onClick={() => removeFromCart(item.id)}>
                                             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" className="bi bi-trash" viewBox="0 0 16 16">
                                                 <path d="M5.5 5.5A.5.5 0 0 1 6 6v6a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5m2.5 0a.5.5 0 0 1 .5.5v6a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5m3 .5a.5.5 0 0 0-1 0v6a.5.5 0 0 0 1 0z"/>
                                                 <path d="M14.5 3a1 1 0 0 1-1 1H13v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V4h-.5a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1H6a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1h3.5a1 1 0 0 1 1 1zM4.118 4 4 4.059V13a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1V4.059L11.882 4zM2.5 3h11V2h-11z"/>
@@ -55,10 +56,10 @@ function CartSection() {
                                     {item.length === 1 ?(
                                         <button disabled className="bg-blue-400 w-5 rounded-lg hover:bg-blue-500 text-white font-bold" onClick={() => removeItem(item)}>-</button>
                                     ):(
-                                        <button className="bg-blue-400 w-5 rounded-lg hover:bg-blue-500 text-white font-bold" onClick={() => removeItem(item)}>-</button>  
+                                        <button className="bg-blue-400 w-5 rounded-lg hover:bg-blue-500 text-white font-bold" onClick={() => console.log(removeItem(item))}>-</button>  
                                     )}
                                     <p className="">{item.length}</p>
-                                    <button className="w-5 bg-blue-400 rounded-lg hover:bg-blue-500 text-white font-bold" onClick={() => addToCart(item)}>+</button>
+                                    <button className="w-5 bg-blue-400 rounded-lg hover:bg-blue-500 text-white font-bold" onClick={() => console.log(addToCart(item))}>+</button>
                                 </div>
                             </div>
                         </div>
