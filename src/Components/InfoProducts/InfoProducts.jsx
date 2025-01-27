@@ -1,9 +1,10 @@
 import React, {useEffect} from "react";
-import { useNavigate, useParams } from "react-router";
+import { useParams } from "react-router";
 import { NavLink } from "react-router";
 import products from "../../Services/Products.json"
 import { Button } from "../Button/Button";
 import { BlackButton } from "../BlackButton/BlackButton";
+import { CartSection } from "../CartSection/CartSection";
 function InfoProducts() {
     useEffect(() => {
         window.scrollTo({
@@ -27,13 +28,14 @@ function InfoProducts() {
     }
     return (
         <section className="mt-24 mb-28 ml-4 mr-4">
+            <CartSection />
             <Button text="Volver" url={-1}/>
             <div className="mt-5 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-2">
                 <div className="border boder-slate-600">
                     <img src={item.image} alt={`Imagen de ${item.name}`} className="w-full h-full object-cover" />
                 </div>
                 <div className="ml-3 max-w-96">
-                    <h2 className="font-bold text-2xl">{item.name}</h2>
+                    <h2 className="font-bold text-2xl">{item.title}</h2>
                     <p className="font-bold text-xl mt-1">₡{item.price}</p>
                     <p className="mt-2"><span className="font-bold">Categoría:</span> {item.category}</p>
                     <p className="text-sm text-slate-600 mt-2">{item.description}</p>
