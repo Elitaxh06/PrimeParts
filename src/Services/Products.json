@@ -1,7 +1,7 @@
 [   
     {
         "id": 1,
-        "name": "Probador liquido de frenos",
+        "name": "Probador liquido de frenos Led",
         "price": 3500,
         "title" : "Probador de líquido de frenos LED, herramienta de prueba automotriz para vehículo.",
         "description" : " Este probador utiliza indicadores LED para mostrar el contenido de humedad en el líquido de frenos, permitiendo un diagnóstico fácil y rápido. Funciona con una pila AAA (no incluida) y ofrece resultados precisos con 5 luces LED de diferentes colores: <2.0% indica que la batería está bien, no es necesario reemplazar; 2.0% muestra que el contenido de humedad es <1%, el líquido está en buen estado; 3.1% indica que el contenido de humedad es <2%, aún se puede usar; 3.2% sugiere que el contenido de humedad es <3%, recomendando reemplazar el líquido de frenos; y >4.0% indica que el contenido de humedad es <4%, el líquido debe ser reemplazado inmediatamente. Tamaño: 15 cm. Fuente de alimentación: 1 pila AAA de 1.5V (no incluida). Nota: La imagen puede no reflejar con precisión el color real debido a las diferencias de las pantallas.",
@@ -15,8 +15,8 @@
         "id": 2,
         "name": "Filtro Profesional de Combustible",
         "price": 3800,
-        "title" : "Filtro Universal profesional de gasolina y combustible, accesorio para motocicleta, ciclomotor, Scooter, Dirt Bike, ATV, 20/10 piezas.",
-        "description" : "Este filtro universal es ideal para mantener el combustible limpio en motocicletas y scooters. Fácil de instalar y con alta fiabilidad, es compatible con mangueras de 1/4 (6mm-7mm). Fabricado con ABS y papel de filtro, tiene una longitud de 5.5 cm y un diámetro de 2.6 cm. Disponible en colores beige, transparente y naranja. Incluye 10 filtros. Es compatible con marcas como Harley, Yamaha, Honda, Kawasaki, Ducati, y más. Ten en cuenta que es un artículo de reemplazo del mercado de accesorios, no es un producto original, y su apariencia puede variar ligeramente debido a las diferencias de luz y pantalla.",
+        "title" : "Filtro Universal profesional de gasolina y combustible, accesorio para motocicleta, ciclomotor, Scooter, Dirt Bike, ATV, 20/11 piezas.",
+        "description" : "Este filtro universal es ideal para mantener el combustible limpio en motocicletas y scooters. Fácil de instalar y con alta fiabilidad, es compatible con mangueras de 1/4 (6mm-7mm). Fabricado con ABS y papel de filtro, tiene una longitud de 5.5 cm y un diámetro de 2.6 cm. Disponible en colores beige, transparente y naranja. Incluye 11 filtros. Es compatible con marcas como Harley, Yamaha, Honda, Kawasaki, Ducati, y más. Ten en cuenta que es un artículo de reemplazo del mercado de accesorios, no es un producto original, y su apariencia puede variar ligeramente debido a las diferencias de luz y pantalla.",
         "stock": 1,
         "category": "Repuestos",
         "image": "https://ae-pic-a1.aliexpress-media.com/kf/Sc1c7bddd168a4d4bab3a7acb3ff608000.jpg_960x960q75.jpg_.avif",
@@ -110,6 +110,18 @@
     },
     {
         "id": 10,
+        "name": "Medidor de presión de aire de neumáticos de coche Digital",
+        "price": 5500,
+        "title" : "TG105 TG205 R-6802 medidor de presión de aire de neumáticos de coche Digital de alta precisión pantalla LCD manómetro barómetros para coche camión",
+        "description" : "Medidor digital de presión de neumáticos con chip de visualización avanzado y pantalla LCD para lecturas precisas y confiables. Ofrece 4 unidades de medición (PSI, BAR, KPA, KG) y rango de hasta 150 PSI, con diseño ergonómico y carcasa de plástico resistente. Funciona con pila LR44 reemplazable, incluye apagado automático, mejora la seguridad, eficiencia y vida útil de los neumáticos. Fácil de usar con consejos prácticos para garantizar un sellado correcto durante la medición. Nota: Baterías no incluidas.",
+        "stock": 1,
+        "category": "Accesorios",
+        "image": "https://ae-pic-a1.aliexpress-media.com/kf/H58bb6f8155fb491cbf872f24efb54ab2Z.jpg_960x960q75.jpg_.avif",
+        "isFeatured": false,
+        "url" : "10"
+    },
+    {
+        "id": 11,
         "name": "Luces para Válvulas de Neumáticos",
         "price": 2000,
         "title" : "Tapas de válvulas luminosas para neumáticos de coche, cubierta de cubo de neumático de motocicleta, decoración para Seat Ibiza 6l 6J Leon Mk3 mk2 5F 2 Cupra Alhambra At.",
@@ -118,10 +130,10 @@
         "category": "Accesorios",
         "image": "https://i.ebayimg.com/thumbs/images/g/EnsAAOSwTO5m2mhl/s-l1200.jpg",
         "isFeatured": false,
-        "url" : "10"
+        "url" : "11"
     },
     {
-        "id": 11,
+        "id": 12,
         "name": "Sticker Luminoso para Botones",
         "price": 500,
         "title" : "Sticker luminosa para botón de ventana de coche, interruptor elevador, calcomanías fluorescentes nocturnas, stickers para interiores de carros, accesorios para automóviles.",        
@@ -130,6 +142,6 @@
         "category": "Accesorios",
         "image": "https://ae-pic-a1.aliexpress-media.com/kf/S66e763ac47f54465a1db0dc0a264b7c7J.jpg_960x960q75.jpg_.avif",
         "isFeatured": false,
-        "url" : "11"
+        "url" : "12"
     }
 ]
