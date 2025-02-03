@@ -16,6 +16,6 @@ function DateTime({prop}) {
             </relative-time>
         </p>
     )
-}
+} 
 
 export { DateTime}

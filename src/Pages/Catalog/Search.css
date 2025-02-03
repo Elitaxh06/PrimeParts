@@ -1,0 +1,30 @@
+.asidee {
+    animation-duration: 1.2s;
+    animation-name: slideSearch;
+}
+
+@keyframes slideSearch {
+    from{
+        z-index: 0;
+        margin-top: -100%;
+        opacity: 0;
+    }
+    to{
+        margin-top: 0%;
+        opacity: 1;
+    }
+}
+
+@media (max-width: 768px) {
+    
+    @keyframes slideSearch {
+        from{
+            margin-top: -100%;
+            opacity: 0;
+        }
+        to{
+            margin-top: 0%;
+            opacity: 1;
+        }
+    }
+}

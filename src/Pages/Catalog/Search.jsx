@@ -1,17 +1,19 @@
 import React from "react";
 import { NavLink } from "react-router";
+import "./Search.css"
 function Search ({search, setSearch, selectedCategory, filterByCategory}) {
     
     return(
-        <aside className=" w-full p-4 border-r border-gray-300 ">
+        <aside className=" w-full p-4 border-r border-gray-300 asidee z-20">
             <h2 className="text-2xl font-bold mb-4">Búsqueda</h2>
             <input 
               type="text" 
+              id="searching"
               value={search}
               placeholder="Buscar producto..." 
               className="w-full p-2 border rounded-md mb-4"
               onChange={(e) => setSearch(e.target.value)}
-            />
+              />
             
             <h2 className="text-2xl font-bold mb-4">Categoría</h2>
             <div>

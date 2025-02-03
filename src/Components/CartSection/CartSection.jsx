@@ -29,7 +29,7 @@ function CartSection() {
             <section className="mt-20 mb-12 fixed -bottom-12 z-40 w-48 right-0 border-l border-neutral-400 shadow-lg bg-white overflow-y-auto scrol cart-window">
             <div className="flex justify-start place-items-start mt-20">
             </div>
-                <div className="lg:mt-14 mt-8">
+                <div className="lg:mt-14 mt-20">
                 <h1 className="text-4xl font-bold">Tu Carrito</h1>
             </div>
            
