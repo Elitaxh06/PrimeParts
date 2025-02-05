@@ -51,7 +51,13 @@ function Cart () {
                                     <button onClick={() => removeItem(item)} className="bg-slate-50 border border-slate-600 text-black flex items-center justify-center hover:bg-slate-200 w-8 rounded-md font-bold text-xl">-</button>
                                 )}
                                 <p className="font-bold">{item.length}</p>
+                                {item.stock !== item.length ? (
                                 <button onClick={() => addToCart(item)} className="bg-slate-50 border border-slate-600 text-black flex items-center justify-center hover:bg-slate-200 w-8 h-7 rounded-md font-bold text-xl">+</button>
+
+                                ):
+                                <button disabled onClick={() => addToCart(item)} className="bg-slate-50 border border-slate-600 text-black flex items-center justify-center hover:bg-slate-200 w-8 h-7 rounded-md font-bold text-xl">+</button>
+
+                                }
                                 
                                 <button className="hover:scale-110 ml-3 hover:text-red-500" onClick={() => removeFromCart(item.id)}>
                                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" className="bi bi-trash" viewBox="0 0 16 16">

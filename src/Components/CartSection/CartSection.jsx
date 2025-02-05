@@ -26,11 +26,11 @@ function CartSection() {
 
             {open && (
 
-            <section className="mt-20 mb-12 fixed -bottom-12 z-40 w-48 right-0 border-l border-neutral-400 shadow-lg bg-white overflow-y-auto scrol cart-window">
+            <section className="fixed -bottom-4 z-40 w-48 right-0 border-l border-neutral-400 shadow-lg bg-white overflow-y-auto scrol cart-window">
             <div className="flex justify-start place-items-start mt-20">
             </div>
-                <div className="lg:mt-14 mt-20">
-                <h1 className="text-4xl font-bold">Tu Carrito</h1>
+                <div className="lg:mt-10 mt-24">
+                <h1 className="text-4xl font-bold text-center">Tu Carrito</h1>
             </div>
            
 
@@ -59,7 +59,12 @@ function CartSection() {
                                         <button className="bg-blue-400 w-5 rounded-lg hover:bg-blue-500 text-white font-bold" onClick={() => console.log(removeItem(item))}>-</button>  
                                     )}
                                     <p className="">{item.length}</p>
-                                    <button className="w-5 bg-blue-400 rounded-lg hover:bg-blue-500 text-white font-bold" onClick={() => console.log(addToCart(item))}>+</button>
+                                    {item.stock === item.length ? (
+                                        <button disabled className="w-5 bg-blue-400 rounded-lg hover:bg-blue-500 text-white font-bold" onClick={() => console.log(addToCart(item))}>+</button>
+
+                                    ): (
+                                        <button className="w-5 bg-blue-400 rounded-lg hover:bg-blue-500 text-white font-bold" onClick={() => console.log(addToCart(item))}>+</button>
+                                    )}
                                 </div>
                             </div>
                         </div>
@@ -69,16 +74,16 @@ function CartSection() {
                         <p>₡{total}</p>
                     </div>
                     <div className="flex justify-between mt-1">
-                        <p>Envio</p>
-                        <p>Gratis</p>
+                        <p>Envio:</p>
+                        <p className="font-bold">Gratis</p>
                     </div>
                     <div className="flex justify-between border-t border-slate-300 mt-2">
-                        <p>Total</p>
+                        <p className="font-bold">Total:</p>
                         <p>₡{total}</p>
                     </div>
                 </div>
             </article>
-            <div className="flex flex-col justify-center items-center mb-6">
+            <div className="flex flex-col justify-center items-center mb-12">
                 <NavLink to="/cart">
                     <button className="bg-black text-white mt-5 h-8 hover:bg-neutral-700 w-40 rounded-md">Ver mi carrito</button>
                 </NavLink>

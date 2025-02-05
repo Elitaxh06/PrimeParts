@@ -52,7 +52,7 @@ function Order () {
                  </div>
                  <div className="flex justify-center flex-col items-center gap-1">
                     <button onClick={messageWhatsApp} className="bg-black w-full mt-4 h-8 rounded-md text-white hover:bg-slate-800">Confirmar Pedido</button>
-                    <PayPalButton />
+                    {/* <PayPalButton /> */}
                  </div>
                 </div>
         )}

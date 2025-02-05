@@ -2,7 +2,7 @@ import React, {useState} from "react";
 import { useCart } from "../../Context/CartContext";
 import "./BlackButton.css"
 function BlackButton ({text, product}){
-    const { addToCart } = useCart()
+    const { cart, addToCart } = useCart()
     const [added, setAdded] = useState(false)
     const [texto, setTexto] = useState(text);
     const isInStock = product.stock > 0;
@@ -24,7 +24,9 @@ function BlackButton ({text, product}){
     }
     return(
         <div className="text-center">
-            <button onClick={handleAddToCart} disabled={added} className="btn mb-3 bg-black h-8 text-white mt-3 hover:bg-neutral-800">
+            
+            {cart.stock !== cart.length ? (
+                <button onClick={handleAddToCart} disabled={added} className="btn mb-3 bg-black h-8 text-white mt-3 hover:bg-neutral-800">
                 {added && (
                     <div className="cart-animation">
                      {/* Carrito SVG */}
@@ -36,13 +38,22 @@ function BlackButton ({text, product}){
                 {!added && (
                     <div>
                         {isInStock ? (
-                            <p >{texto}</p>
+                            
+                            <p>{texto}</p>
                         ): (
                             <p>Agotado</p>
                         )}
                     </div>
                 )}
             </button>
+                
+            ):
+            (
+                <button disabled className="btn mb-3 bg-black h-8 text-white mt-3 hover:bg-neutral-800">
+                    Agotados
+                </button>
+                
+                        )}
         </div>
     )
 }
