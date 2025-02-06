@@ -15,7 +15,7 @@ function FeaturedProducts () {
             <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-1 lg:grid-cols-3 gap-10 p-10 ">
             {featured.map(product =>
             <div key={product.id} className="border p-4 rounded-3xl shadow hover:shadow-lg">
-                <Card name={product.name} price={product.price} image={product.image} product={product}/>        
+                <Card name={product.name} price={product.price} image={product.image} product={product} stock={product.stock}/>        
             </div>
         )}
         </div>

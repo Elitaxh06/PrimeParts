@@ -4,14 +4,16 @@ import { Products } from "./Products";
 import { CartSection } from"../../Components/CartSection/CartSection";
 
 function Catalog () {
-    useEffect(() => {
-        window.scrollTo({
-          top: 0,
-          left: 0,
-        });
-      }, []);
+  const {isVisible, setIsVisible} = useState(false)
+  useEffect(() => {
+    window.scrollTo({
+      top: 0,
+      left: 0,
+    });
+  }, []);
     return (
         <section className="mt-28 mb-12">
+
             <CartSection />
             <Products />
            
