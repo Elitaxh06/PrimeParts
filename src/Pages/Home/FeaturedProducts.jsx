@@ -5,7 +5,7 @@ import { Card } from "../../Components/Card/Card";
 import { useCart } from "../../Context/CartContext";
 import "./FeaturedProducts.css"
 function FeaturedProducts () {
-    const { addToCart } = useCart()
+    const { addToCart, getProductQuantity } = useCart()
     const featured = products.filter(product => product.isFeatured)
     
     return(

@@ -4,7 +4,7 @@ import { NavLink } from "react-router"
 import "./CartSection.css"
 function CartSection() {
     const { cart, addToCart, removeFromCart, removeItem } = useCart()
-    const { overlay, setOverlay } = useState(false)
+    const [ overlay, setOverlay ] = useState(false)
     const [open, setOpen] = useState(false)
     const total = cart.reduce((acc, item) => acc + item.price, 0)
     const agregatedCart = cart.reduce((acc,item) => {
@@ -26,7 +26,7 @@ function CartSection() {
                 </button>
             {open && (
                 <div
-                className="fixed inset-0 bg-black opacity-50 z-40"
+                className="fixed inset-0 bg-black opacity-50 z-40 h-full"
                 onClick={() => {
                     setOpen(false);
                     setOverlay(false); // Cerrar la vista previa y la capa oscura si se hace clic fuera
@@ -35,20 +35,20 @@ function CartSection() {
             )}
             {open && (
 
-            <section className="fixed -bottom-4 z-40 w-48 lg:w-56 md:w-56 right-0 border-l border-neutral-400 shadow-lg bg-white overflow-y-auto scrol cart-window">
+            <section className="fixed top-8 z-40 w-48 lg:w-56 md:w-56 right-0 h-full border-l border-neutral-400 shadow-lg bg-white overflow-y-auto scrol cart-window">
             <div className="flex justify-start place-items-start mt-20">
             </div>
                 <div className="lg:mt-10 mt-8">
-                <h1 className="text-4xl font-bold text-center fixed md:right-9 lg:right-9 sm:right-3 right-3">Tu Carrito</h1>
+                <h1 className="text-4xl font-bold text-center">Tu Carrito</h1>
             </div>
            
 
-            <article className="flex flex-col md:flex-row pt-8">
+            <article className="flex flex-col md:flex-row pt-2">
                 <div className="w-full md:w-1/1 p-4">
                     
                     {agregatedCart.map((item, index)=>(
                         <div key={index}>
-                            <div className="flex flex-col bg-slate-100 mb-2 rounded-lg">
+                            <div className="flex flex-col bg-slate-100 mb-5 pb-2 rounded-lg">
                                 <div className="flex flex-col">
                                     <p className="flex justify-between">
                                         <span className="font-bold ml-1">{item.name}</span>
@@ -61,7 +61,7 @@ function CartSection() {
                                      </p>
                                      <div className="flex justify-between items-center mr-2">
                                         <p className="text-slate-600 ml-2">₡{item.price} </p>
-                                        <p className="text-slate-600 ml-2">₡{item.stock} </p>
+                                        <p className="text-slate-600 ml-2">{item.stock}.u </p>
                                     </div>
                                 </div>
                                 <div className="flex justify-around items-center mb-1 mt-2 rounded-md">

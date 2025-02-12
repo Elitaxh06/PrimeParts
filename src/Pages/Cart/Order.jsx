@@ -1,6 +1,6 @@
 import React from "react";
 import { useCart } from "../../Context/CartContext";
-import { PayPalButton } from "../../Components/PayPalButton/PayPalButton";
+import { NavLink } from "react-router";
 function Order () {
     const { cart } = useCart()
     const total = cart.reduce((total, item) => total + item.price, 0)
@@ -53,6 +53,9 @@ function Order () {
                  <div className="flex justify-center flex-col items-center gap-1">
                     <button onClick={messageWhatsApp} className="bg-black w-full mt-4 h-8 rounded-md text-white hover:bg-slate-800">Confirmar Pedido</button>
                     {/* <PayPalButton /> */}
+                    <NavLink to="/products" className="pt-3 border-b-2 border-slate-900">
+                        Continuar Comprando
+                    </NavLink>
                  </div>
                 </div>
         )}

@@ -1,10 +1,18 @@
 import React, { createContext, useContext, useState} from "react";
-
+import products from "../Services/Products.json"
 const CartContext = createContext()
 
 export const CartProvider = ({children}) => {
     const [cart, setCart] = useState([])
+    const getProductQuantity = (productId) => {
+        return cart.filter(item => item.id === productId).length;
+    };
     const addToCart = (product) => {
+        const quantityInCart = getProductQuantity(product.id)
+        if(quantityInCart >= product.stock){
+            console.log("No hay mas stock disponible")
+            return;
+        }  
         setCart((prevCart)=>[...prevCart, product])
         return product
     }
@@ -21,12 +29,12 @@ export const CartProvider = ({children}) => {
                 newCart.splice(index, 1);
                 return newCart;
             }
-            console.log("lkajflkasjkfs")
+            console.log("")
             return prevCart;
         });
     };
     return(
-        <CartContext.Provider value={{cart, addToCart, removeItem, removeFromCart, clearCart}}>
+        <CartContext.Provider value={{cart, addToCart, removeItem, removeFromCart, clearCart, getProductQuantity}}>
             {children}
         </CartContext.Provider>
     )

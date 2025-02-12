@@ -2,31 +2,35 @@ import React, {useState} from "react";
 import { useCart } from "../../Context/CartContext";
 import "./BlackButton.css"
 function BlackButton ({text, product}){
-    const { cart, addToCart } = useCart()
+    const { cart, addToCart, getProductQuantity } = useCart()
     const [added, setAdded] = useState(false)
     const [texto, setTexto] = useState(text);
-    const isInStock = product.stock > 0;
+
+    const quantityInCart = getProductQuantity(product.id)
+    const isOutOfStock = product.stock === 0
+    const isMaxReached = quantityInCart >= product.stock;
+    const isDisabled = quantityInCart >= product.stock
     const handleAddToCart = () => {
+        
         if(!product){
             console.log("El producto no fue proporcionado")
             return;
         }
-        if(isInStock){
-            addToCart(product)
-            setAdded(true)
-            setTimeout(() => {
-                setTexto(text)
-                setAdded(false)
-            }, 2000)
-        }else{
+        if(isOutOfStock){
             alert('¡Ups! Este producto está agotado. Pero estamos trabajando para traerlo de vuelta pronto.')
+            return;
         }
+        addToCart(product)
+        setAdded(true)
+        setTimeout(() => {
+            setTexto(text)
+            setAdded(false)
+        }, 2000)
     }
     return(
         <div className="text-center">
-            
-            {cart.stock !== cart.length ? (
-                <button onClick={handleAddToCart} disabled={added} className="btn mb-3 bg-black h-8 text-white mt-3 hover:bg-neutral-800">
+            {cart.stock !== cart.length && (
+                <button onClick={handleAddToCart} disabled={isDisabled || added} className="btn mb-3 bg-black h-8 text-white mt-3 hover:bg-neutral-800">
                 {added && (
                     <div className="cart-animation">
                      {/* Carrito SVG */}
@@ -34,26 +38,13 @@ function BlackButton ({text, product}){
 
                      <div className="product-falling font-bold">+1</div>
                    </div>
-                    )} 
+                )} 
+    
                 {!added && (
-                    <div>
-                        {isInStock ? (
-                            
-                            <p>{texto}</p>
-                        ): (
-                            <p>Agotado</p>
-                        )}
-                    </div>
+                    <p>{isOutOfStock ? "Agotado" : isMaxReached ? "Máximo alcanzado" : texto}</p>
                 )}
             </button>
-                
-            ):
-            (
-                <button disabled className="btn mb-3 bg-black h-8 text-white mt-3 hover:bg-neutral-800">
-                    Agotados
-                </button>
-                
-                        )}
+            )}
         </div>
     )
 }
