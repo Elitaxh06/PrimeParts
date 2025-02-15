@@ -1,7 +1,7 @@
 import React, {useState} from "react";
 import { useCart } from "../../Context/CartContext";
 import "./BlackButton.css"
-function BlackButton ({text, product}){
+function BlackButton ({text, product,texto1}){
     const { cart, addToCart, getProductQuantity } = useCart()
     const [added, setAdded] = useState(false)
     const [texto, setTexto] = useState(text);
@@ -41,7 +41,7 @@ function BlackButton ({text, product}){
                 )} 
     
                 {!added && (
-                    <p>{isOutOfStock ? "Agotado" : isMaxReached ? "Máximo alcanzado" : texto}</p>
+                    <p>{isOutOfStock ? "Agotado" : isMaxReached ? texto1 : texto}</p>
                 )}
             </button>
             )}

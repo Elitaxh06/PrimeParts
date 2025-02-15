@@ -26,7 +26,7 @@
     {
         "id": 3,
         "name": "Cargador 100W Carga Rápida",
-        "price": 8000,
+        "price": 18500,
         "title" : "Cargador de coche de 6 puertos de 100W, carga rápida, USB tipo C, encendedor de coche PD QC3.0, cargador de teléfono para iPhone, Samsung, Huawei, Xiaomi.",
         "description" : "Cargador de Coche de 6 Puertos 100W con Carga Rápida: Este cargador de coche cuenta con 6 puertos USB, incluyendo un puerto USB Tipo C, con una potencia total de 100W y soporte para carga rápida. Ideal para cargar múltiples dispositivos a la vez, compatible con teléfonos iPhone, Samsung, Huawei, Xiaomi y otros dispositivos que soporten carga rápida. Equipado con tecnología PD y QC3.0 para ofrecer una carga eficiente y rápida. Se conecta al encendedor del coche, convirtiéndolo en una estación de carga perfecta para tus viajes.",
         "stock": 2,
@@ -38,7 +38,7 @@
     {
         "id": 4,
         "name": "Filtro de aire Universal",
-        "price": 3500,
+        "price": 5000,
         "title" : "Filtro de aire Universal para motocicleta, Kit de inducción de admisión para GY6, 50cc, 110CC, 125cc, ATV, Dirt Bike, 45mm, 48mm, 58mm, 38mm.",
         "description" : "Filtro de Aire Universal para Motocicleta 38mm: Este filtro de aire universal es compatible con motocicletas, ATV y Dirt Bikes de 50cc a 125cc, y está fabricado con materiales de alta calidad para una mayor durabilidad. Su diseño evita que las partículas abrasivas entren en el motor, garantizando un rendimiento óptimo. Es fácil de instalar y se asegura firmemente en la tubería del vehículo. Con un diámetro de 3.8 cm y una altura de 8 cm. Nota: El color del artículo puede variar ligeramente según la pantalla y las mediciones manuales pueden presentar ligeras diferencias. Incluye 1 filtro de aire para motocicleta.",
         "stock": 1,
@@ -50,7 +50,7 @@
     {
         "id": 5,
         "name": "Pastillas de freno",
-        "price": 6800,
+        "price": 9000,
         "title" : "Pastillas de freno delanteras y traseras para motocicleta.",
         "description" : "Pastillas de freno delanteras y traseras de alta calidad, fabricadas con aleaciones de metal y latón, diseñadas para ofrecer un rendimiento estable y duradero. Estas pastillas son resistentes a altas temperaturas, lo que garantiza su eficiencia en diferentes condiciones. Además, ayudan a reducir el ruido y las vibraciones, proporcionando una conducción cómoda y segura. Son compatibles con una amplia gama de motocicletas, incluyendo modelos de KTM (SX, EXC, XC, SX-F, EXC-F, entre otros) del 2003 al 2022, así como modelos de Husqvarna (CR, FC, FE, FX, TC, TE, WR) del 2004 al 2020, y Husaberg (TE, FX, FE) del 2008 al 2013. Con una gran capacidad de carga, ofrecen una excelente longevidad y rendimiento continuo.",
         "stock": 2,
@@ -62,7 +62,7 @@
     {
         "id": 6,
         "name": "Repara abolladuras",
-        "price": 1500,
+        "price": 5000,
         "title" : "Kit de reparación de abolladuras de coche, extractor de abolladuras multifunción para reparación de coches, ventosa cóncava, ventosas de vidrio, herramienta portátil para carrocería de coche.",
         "description" : "El kit de herramientas manuales automotrices está diseñado para reparar abolladuras en la carrocería del automóvil y levantar objetos de superficies lisas. Está fabricado con materiales duraderos como plástico ABS, caucho y metal. El kit incluye ventosas de diferentes tamaños con fuertes capacidades de succión (hasta 70 kg/154 lb para la ventosa grande) que permiten extraer abolladuras y mover objetos como vidrios, azulejos o electrónicos. Su diseño ergonómico y su almohadilla de goma suave evitan rayones y marcas en las superficies. Es fácil de usar y se adapta a diversas aplicaciones, tanto para reparaciones de automóviles como para el manejo de objetos planos.",
         "stock": 1,
@@ -86,7 +86,7 @@
     {
         "id": 8,
         "name": "Manómetro de presion de neumáticos",
-        "price": 1300,
+        "price": 2600,
         "title" : "Manómetro de presión de neumáticos de coche, medidor de Dial para coche, motocicleta, camión, bicicleta, probador de vehículo, medición de presión de neumáticos.",
         "description" : "Este práctico y compacto dispositivo permite medir la presión de los neumáticos de manera precisa y sencilla. Ideal para automóviles, motocicletas, bicicletas, y más. Cuenta con una carátula fácil de leer, y su diseño ergonómico lo hace fácil de manejar. Mantén tus neumáticos en óptimas condiciones, mejorando el rendimiento y la seguridad de tu vehículo. Perfecto para uso en el hogar, talleres o en carretera.",
         "stock": 2,
@@ -99,10 +99,10 @@
     {
         "id": 9,
         "name": "Nano Cerámica para Coches",
-        "price": 2400,
+        "price": 4000,
         "title" : "Revestimiento Nano de cerámica para coche, recubrimiento líquido, capa hidrofóbica de nanocristal, agente de recubrimiento de pintura para pulido.",
         "description" : "El revestimiento nano de cerámica para coches es un recubrimiento líquido diseñado para proteger la pintura del vehículo. Formado por una capa hidrofóbica de nanocristales, proporciona una barrera contra la suciedad, agua y otros contaminantes, mejorando la durabilidad de la pintura. Ideal para el pulido y mantenimiento del esmalte del coche, este agente de recubrimiento ofrece una protección avanzada, creando una capa resistente que mejora el acabado y facilita la limpieza del vehículo.",
-        "stock": 1,
+        "stock": 2,
         "category": "Accesorios",
         "image": "https://ae01.alicdn.com/kf/S03e255057ce046a89ab49a2bad3d0795x.jpg_960x960.jpg",
         "isFeatured": false,
@@ -111,7 +111,7 @@
     {
         "id": 10,
         "name": "Medidor de presión de aire de neumáticos de coche Digital",
-        "price": 5500,
+        "price": 5000,
         "title" : "TG105 TG205 R-6802 medidor de presión de aire de neumáticos de coche Digital de alta precisión pantalla LCD manómetro barómetros para coche camión",
         "description" : "Medidor digital de presión de neumáticos con chip de visualización avanzado y pantalla LCD para lecturas precisas y confiables. Ofrece 4 unidades de medición (PSI, BAR, KPA, KG) y rango de hasta 150 PSI, con diseño ergonómico y carcasa de plástico resistente. Funciona con pila LR44 reemplazable, incluye apagado automático, mejora la seguridad, eficiencia y vida útil de los neumáticos. Fácil de usar con consejos prácticos para garantizar un sellado correcto durante la medición. Nota: Baterías no incluidas.",
         "stock": 1,
@@ -123,7 +123,7 @@
     {
         "id": 11,
         "name": "Luces para Válvulas de Neumáticos",
-        "price": 2000,
+        "price": 1200,
         "title" : "Tapas de válvulas luminosas para neumáticos de coche, cubierta de cubo de neumático de motocicleta, decoración para Seat Ibiza 6l 6J Leon Mk3 mk2 5F 2 Cupra Alhambra At.",
         "description" : "Las luces para válvulas de neumáticos son pequeños dispositivos decorativos que se instalan en las válvulas de los neumáticos de un vehículo. Al girar las ruedas, las luces se iluminan, ofreciendo un efecto visual atractivo durante la conducción, especialmente por la noche. Además de ser estéticamente agradables, también aumentan la visibilidad del vehículo.",
         "stock": 3,

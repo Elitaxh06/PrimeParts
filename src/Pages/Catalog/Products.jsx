@@ -10,6 +10,12 @@ function Products () {
     const [selectedCategory, setSelectedCategory] = useState([]) // son las casillas de las categorias
     const [loading, setLoading] = useState(false)
     
+    const mensaje = products.map((product) => product.stock)
+    const mensaje2 = "Maximo " + mensaje.reduce((a, b) => Math.min(a, b))
+    const fullMessage = () => {
+        
+    }
+
     const handleImageLoad = () => {
         console.log("Imagen cargada")
         setLoading(false)
@@ -58,14 +64,17 @@ function Products () {
                         </NavLink>
                         <p className="mt-4 ml-2 font-bold text-xl">{product.name}</p>
                         <div className="flex justify-between">
-                            <p className="ml-2">₡{product.price}</p>
-                            {product.stock === 1 ? (
+                            <p className="ml-2 pt-2 pb-2 text-slate-800">₡{product.price}</p>
+                            {/* {product.stock === 1 ? (
                                 <p className="text-slate-500">{product.stock} unidad</p>
                             ): (
                                 <p className="text-slate-500">{product.stock} unidades</p>
-                            )}
+                            )} */}
                         </div>
-                        <BlackButton text="Agregar al carrito" product={product}/>
+                        <BlackButton 
+                        text="Agregar al carrito"
+                        texto1={product.stock === 1 ? "Máximo " + product.stock + " unidad" : 'Máximo ' + product.stock + ' unidades'}
+                        product={product}/>
                         <NavLink to={`/info-product/${product.url}`}>
                             <ButtonMoreInfo text="Ver más"/>    
                         </NavLink>
