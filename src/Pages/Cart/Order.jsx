@@ -43,8 +43,8 @@ function Order () {
                     <p className="font-bold">₡{total}</p>
                  </div>
                  <div className="flex justify-between mt-1">
-                    <p>Envio</p>
-                    <p>Gratis</p>
+                    <p>Descuento:</p>
+                    <p>₡0</p>
                  </div>
                  <div className="flex justify-between border-t border-slate-300 mt-2">
                     <p>Total:</p>

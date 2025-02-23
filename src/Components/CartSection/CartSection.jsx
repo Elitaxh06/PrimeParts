@@ -35,7 +35,7 @@ function CartSection() {
             )}
             {open && (
 
-            <section className="fixed top-8 z-40 w-48 lg:w-56 md:w-56 right-0 h-full border-l border-neutral-400 shadow-lg bg-white overflow-y-auto scrol cart-window">
+            <section className="fixed top-8 z-40 w-48 lg:w-56 md:w-56 right-0 h-full border-l-2 border-l-black shadow-lg bg-white overflow-y-auto scrol cart-window">
             <div className="flex justify-start place-items-start mt-20">
             </div>
                 <div className="lg:mt-10 mt-8">
@@ -86,8 +86,8 @@ function CartSection() {
                         <p>₡{total}</p>
                     </div>
                     <div className="flex justify-between mt-1">
-                        <p>Envio:</p>
-                        <p className="font-bold">Gratis</p>
+                        <p>Descuento:</p>
+                        <p>₡0</p>
                     </div>
                     <div className="flex justify-between border-t border-slate-300 mt-2">
                         <p className="font-bold">Total:</p>

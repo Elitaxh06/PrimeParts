@@ -24,7 +24,7 @@ function Card ({name, price, image, product, stock}) {
                     <p className="ml-2 text-slate-500">{stock} unidades</p>
                 )}
             </div>
-            <BlackButton text="Agregar al carrito" product={product}/>
+            <BlackButton text="Agregar al carrito" product={product} texto1={product.stock === 1 ? "Máximo " + product.stock + " unidad" : 'Máximo ' + product.stock + ' unidades'}/>
             <NavLink to={`/info-product/${product.url}`}>
                 <ButtonMoreInfo text="Ver más"/>
             </NavLink>
