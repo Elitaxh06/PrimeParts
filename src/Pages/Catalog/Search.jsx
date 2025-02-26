@@ -17,23 +17,23 @@ function Search ({search, setSearch, selectedCategory, filterByCategory}) {
             
             <h2 className="text-2xl font-bold mb-4">Categoría</h2>
             <div>
-                <label className="block">
+                <label className="block cursor-pointer hover:font-semibold">
                     <input type="checkbox" 
                     checked={selectedCategory.includes('Repuestos')}
                     onChange={() => filterByCategory('Repuestos')}
-                    className="mr-2" />Repuestos
+                    className="mr-2 cursor-pointer" />Repuestos
                 </label>
-                <label className="block">
+                <label className="block cursor-pointer hover:font-semibold">
                     <input 
                     checked={selectedCategory.includes('Accesorios')}
                     onChange={() => filterByCategory('Accesorios')}
-                    type="checkbox" className="mr-2" />Accesorios
+                    type="checkbox" className="mr-2 cursor-pointer" />Accesorios
                 </label>
-                <label className="block">
+                <label className="block cursor-pointer hover:font-semibold">
                     <input 
                     checked={selectedCategory.includes('Herramientas')}
                     onChange={() => filterByCategory('Herramientas')}
-                    type="checkbox" className="mr-2" />Herramientas
+                    type="checkbox" className="mr-2 cursor-pointer" />Herramientas
                 </label>
             </div>
             <NavLink to="/cart">

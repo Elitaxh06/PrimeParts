@@ -10,12 +10,12 @@ function Home () {
   const [isVisible, setIsVisible] = useState(false)
   
   useEffect(() => {
-          window.scrollTo({
-            top: 0,
-            left: 0,
-            // Desplazamiento suave
-          });
-        }, []);
+    window.scrollTo({
+      top: 0,
+      left: 0,
+      // Desplazamiento suave
+    });
+  }, []);
   
   return(
       <main>

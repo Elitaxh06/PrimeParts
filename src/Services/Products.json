@@ -33,6 +33,7 @@
         "category": "Accesorios",
         "image": "https://ae01.alicdn.com/kf/S824e6e373505433b900b8163ed399404L.jpg_640x640q90.jpg",                
         "isFeatured": true,
+        "image2" : "../.././public/images/Cargador1(1).webp",
         "url" : "3"
     },
     {
@@ -57,6 +58,7 @@
         "category": "Repuestos",
         "image": "https://ae01.alicdn.com/kf/A333c3e812a0e4aa7911dc4a33c6450f5Q.jpg_640x640q90.jpg",
         "isFeatured": false,
+        "image2" : "../.././public/images/Pastilas.webp",
         "url" : "5"
     },
     {
@@ -81,6 +83,7 @@
         "category": "Herramientas",
         "image": "https://ae01.alicdn.com/kf/S7e61d8d42939424c828b83b52561be6aj.jpg_640x640q90.jpg",
         "isFeatured": false,
+        "image2" : "../.././public/images/Desoto(1).webp",
         "url" : "7"
     },
     {
@@ -118,6 +121,7 @@
         "category": "Accesorios",
         "image": "https://ae-pic-a1.aliexpress-media.com/kf/H58bb6f8155fb491cbf872f24efb54ab2Z.jpg_960x960q75.jpg_.avif",
         "isFeatured": false,
+        "image2" : "../.././public/images/medidor.webp",
         "url" : "10"
     },
     {
@@ -130,6 +134,7 @@
         "category": "Accesorios",
         "image": "https://i.ebayimg.com/thumbs/images/g/EnsAAOSwTO5m2mhl/s-l1200.jpg",
         "isFeatured": false,
+        "image2" : "../.././public/images/taponess.webp",
         "url" : "11"
     },
     {
