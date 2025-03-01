@@ -77,7 +77,7 @@ function InfoProducts() {
                     <p className="font-bold text-xl mt-1">₡{item.price}</p>
                     <p className="mt-2"><span className="font-bold">Categoría:</span> {item.category}</p>
                     <p className="text-sm text-slate-600 mt-2">{item.description}</p>
-                    <BlackButton text="Agregar al carrito" product={item}/>
+                    <BlackButton text="Agregar al carrito" product={item} texto1={'Maximo alcanzado'}/>
                 </div>
             </div>
         </section>

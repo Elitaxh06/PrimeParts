@@ -91,12 +91,11 @@ function Contact() {
                     </svg>
                       WhatsApp
                     </p>
-                    <p href="https://wa.me/50683745484" target="_blank" className="mb-3 ml-6 text-sm text-slate-500">+506 83745484</p>
+                    <p href="https://wa.me/50683745484" target="_blank" className="mb-3 ml-6 text-sm text-slate-500">+506 87051600</p>
                     <p className="font-bold text-xl">Horario de Atención</p>
                     <p>
-                        Lunes a viernes de 9:00 AM - 10:00 PM <br />
-                        Sábado de 9:00 AM - 8:00 PM <br />
-                        Domingo de 9:00 AM - 5:00 PM
+                        Lunes a viernes de 9:00 AM - 11:00 PM <br />
+                        Sábado y Domingo de 9:00 AM - 9:00 PM <br />
                     </p>
                 </div>
             </div>

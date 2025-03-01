@@ -65,11 +65,12 @@ function Products () {
                         <p className="mt-4 ml-2 font-bold text-xl">{product.name}</p>
                         <div className="flex justify-between">
                             <p className="ml-2 pt-2 pb-2 text-slate-800">₡{product.price}</p>
-                            {/* {product.stock === 1 ? (
-                                <p className="text-slate-500">{product.stock} unidad</p>
+                            {product.stock === 1 ? (
+                                
+                                <p className="text-slate-500 flex justify-center items-center">{product.stock} unidad</p>
                             ): (
-                                <p className="text-slate-500">{product.stock} unidades</p>
-                            )} */}
+                                <p className="text-slate-500 flex justify-center items-center">{product.stock} unidades</p>
+                            )}
                         </div>
                         <BlackButton 
                         text="Agregar al carrito"

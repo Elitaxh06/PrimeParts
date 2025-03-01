@@ -24,7 +24,7 @@ function Footer() {
 
                 <div className="ml-4 mb-5">
                     <h4 className="text-white">Contacto</h4>
-                    <span className="span">Email: pizarroteb06@outlook.com <br />Telefono: (+505) 83745323</span>
+                    <span className="span">Email: pizarroteb06@outlook.com <br />Telefono: (+506) 87051600</span>
                 </div>
             </div>
             <div className="border-y border-slate-600 ml-36 mr-36 mt-5" id="line"></div>
