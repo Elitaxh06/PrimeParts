@@ -14,7 +14,7 @@
     {
         "id": 2,
         "name": "Filtro Profesional de Combustible",
-        "price": 3500,
+        "price": 4000,
         "title" : "Filtro Universal profesional de gasolina y combustible, accesorio para motocicleta, ciclomotor, Scooter, Dirt Bike, ATV, 5 piezas.",
         "description" : "Este filtro universal es ideal para mantener el combustible limpio en motocicletas y scooters. Fácil de instalar y con alta fiabilidad, es compatible con mangueras de 1/4 (6mm-7mm). Fabricado con ABS y papel de filtro, tiene una longitud de 5.5 cm y un diámetro de 2.6 cm. Disponible en colores beige, transparente y naranja. Incluye 5 filtros. Es compatible con marcas como Harley, Yamaha, Honda, Kawasaki, Ducati, y más. Ten en cuenta que es un artículo de reemplazo del mercado de accesorios, no es un producto original, y su apariencia puede variar ligeramente debido a las diferencias de luz y pantalla.",
         "stock": 2,
@@ -53,7 +53,7 @@
     {
         "id": 5,
         "name": "Pastillas de freno",
-        "price": 9000,
+        "price": 8500,
         "title" : "Pastillas de freno delanteras y traseras para motocicleta.",
         "description" : "Pastillas de freno delanteras y traseras de alta calidad, fabricadas con aleaciones de metal y latón, diseñadas para ofrecer un rendimiento estable y duradero. Estas pastillas son resistentes a altas temperaturas, lo que garantiza su eficiencia en diferentes condiciones. Además, ayudan a reducir el ruido y las vibraciones, proporcionando una conducción cómoda y segura. Son compatibles con una amplia gama de motocicletas, incluyendo modelos de KTM (SX, EXC, XC, SX-F, EXC-F, entre otros) del 2003 al 2022, así como modelos de Husqvarna (CR, FC, FE, FX, TC, TE, WR) del 2004 al 2020, y Husaberg (TE, FX, FE) del 2008 al 2013. Con una gran capacidad de carga, ofrecen una excelente longevidad y rendimiento continuo.",
         "stock": 2,
@@ -66,7 +66,7 @@
     {
         "id": 6,
         "name": "Repara abolladuras",
-        "price": 6500,
+        "price": 8000,
         "title" : "Kit de reparación de abolladuras de coche, extractor de abolladuras multifunción para reparación de coches, ventosa cóncava, ventosas de vidrio, herramienta portátil para carrocería de coche.",
         "description" : "El kit de herramientas manuales automotrices está diseñado para reparar abolladuras en la carrocería del automóvil y levantar objetos de superficies lisas. Está fabricado con materiales duraderos como plástico ABS, caucho y metal. El kit incluye ventosas de diferentes tamaños con fuertes capacidades de succión (hasta 70 kg/154 lb para la ventosa grande) que permiten extraer abolladuras y mover objetos como vidrios, azulejos o electrónicos. Su diseño ergonómico y su almohadilla de goma suave evitan rayones y marcas en las superficies. Es fácil de usar y se adapta a diversas aplicaciones, tanto para reparaciones de automóviles como para el manejo de objetos planos.",
         "stock": 1,

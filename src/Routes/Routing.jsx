@@ -9,6 +9,7 @@ import { Navbar } from "../Components/Navbar/Navbar";
 import { About } from "../Pages/About/About";
 import { Contact } from "../Pages/Contact/Contact";
 import { InfoProducts } from "../Components/InfoProducts/InfoProducts";
+import { Affiliates } from "../Pages/Affiliates/Affiliates";
 
 export const Routing = () => {
     return (
@@ -21,6 +22,7 @@ export const Routing = () => {
                 <Route path="/cart" element={<Cart />} />
                 <Route path="/contact" element={<Contact />} />
                 <Route path="/info-product/:itemId" element={<InfoProducts />} />
+                <Route path="/affiliates" element={<Affiliates /> } />
             </Routes>
             <Footer />
         </CartProvider>

@@ -19,6 +19,7 @@ function Footer() {
                         <li><NavLink to='/about'>Nosotros</NavLink></li>
                         <li><NavLink to='/cart'>Carrito</NavLink></li>
                         <li><NavLink to='/contact'>Contacto</NavLink></li>
+                        <li><NavLink to='/affiliates'>Afiliados</NavLink></li>
                     </ul>
                 </div>
 
