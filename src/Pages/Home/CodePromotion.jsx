@@ -3,7 +3,7 @@ import { NavLink } from "react-router";
 
 function CodePromotion() {
     return(
-        <section className="pt-28 pb-28">
+        <section  className="pt-28 pb-28 pr-2 pl-2 lg:pr-0 lg:pl-0 md:pr-0 md:pl-0 sm:pr-2 sm:pl-2">
             <h2 className="font-bold text-3xl mb-5 text-center">¿Quieres ganar con nosotros?</h2>
             <p className="text-center text-slate-600 text-xl">Únete a nuestro programa de afiliados y obtén códigos de promoción exclusivos para compartir. <br />
                 <span className="font-semibold">

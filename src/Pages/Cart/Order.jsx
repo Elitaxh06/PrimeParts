@@ -12,7 +12,7 @@ function Order() {
 
     const { cart } = useCart();
     const total = cart.reduce((total, item) => total + item.price, 0);
-    const discountAmount = discount ? total * 0.06 : 0;
+    const discountAmount = discount ? total * 0.05 : 0;
     const totalWithDiscount = total - discountAmount;
 
     const handleKeyDown = (e) => {

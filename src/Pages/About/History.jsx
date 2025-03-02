@@ -10,7 +10,7 @@ function History() {
                 <p className="mt-4">PrimeParts nació en 2025 con el objetivo de ofrecer repuestos, herramientas y accesorios de alta calidad, tanto para talleres automotrices como para conductores particulares. <br /> <br />Somos una tienda completamente virtual en crecimiento, enfocada en ofrecer productos confiables a precios accesibles y ofrecer un servicio cercano y personalizado. Desde nuestros inicios, nos hemos dedicado a apoyar a talleres y a individuos con productos adecuados a sus necesidades, manteniéndonos al tanto de las últimas tendencias del sector. Nuestro compromiso es crecer de manera constante, buscando siempre ofrecer lo mejor a nuestros clientes.</p>
                 </div>
                 <div className="flex justify-center items-start">
-                    <img src={taller} alt="taller" className="w-auto object-cover taller" />
+                    <img src={taller} alt="taller" className="hidden sm:block w-auto object-cover taller" />
                 </div>
             </div>
         </section>

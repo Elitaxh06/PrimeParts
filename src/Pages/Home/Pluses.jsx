@@ -19,7 +19,7 @@ function Pluses () {
             title="Nuestras Características"
             svg1={svg1}
             title1="Amplias selección"
-            text1="Decenas de productos para elegir."
+            text1="Variedad de productos para elegir."
             svg2={svg2}
             title2="Envío Seguro"
             text2="Entrega en 24-64 horas."

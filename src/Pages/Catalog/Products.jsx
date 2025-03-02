@@ -53,7 +53,7 @@ function Products () {
 
             <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 gap-10 p-10" id="cardContainer">
                 {filterBySearch && filterBySearch.map((product) => (
-                    <div key={product.id} className="border p-4 rounded-3xl shadow hover:shadow-lg">
+                    <div key={product.id} className="border p-4 rounded-3xl shadow-sm hover:shadow-2xl">
                         <NavLink to={`/info-product/${product.url}`}  end>
                             <img 
                                 // onLoad={() => setLoading(false)}    

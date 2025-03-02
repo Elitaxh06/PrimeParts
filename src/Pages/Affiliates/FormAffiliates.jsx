@@ -1,10 +1,11 @@
 import React from 'react';
 import { useForm, ValidationError } from '@formspree/react';
+import { ContactConfirmation } from '../Contact/ContactConfirmation';
 import "./FormAffiliates.css"
 function FormAffiliates() {
   const [state, handleSubmit] = useForm("movjgdno");
   if (state.succeeded) {
-      return <p>Thanks for joining!</p>;
+      return <ContactConfirmation />;
   }
   return (
     <section className='flex flex-col justify-center items-center w-full'>
@@ -36,10 +37,26 @@ function FormAffiliates() {
               errors={state.errors}
             />
 
+            <label htmlFor="socialNetwork" className='font-semibold mt-5'>Sitio web o red social</label>
+            <input 
+              id='socialNetwork'
+              type="text"
+              placeholder='Ej: instagram o tiktok'
+              name="socialNetwork"
+              className='border border-slate-300 rounded-md p-2' 
+              required
+            />
+            <ValidationError 
+              prefix='SocialNetwork'
+              field='socialNetwork'
+              errors={state.errors}
+
+            />
+
             <label htmlFor="promoCode" className='font-semibold mt-5'>Código Promocional Deseado</label>
             <input
               id="promoCode"
-              className='border border-slate-300 rounded-md p-2 text-c'
+              className='border border-slate-300 rounded-md p-2'
               type="text"
               placeholder='Ej: TUCODIGO10'
               name="promoCode"
@@ -58,6 +75,7 @@ function FormAffiliates() {
               className='border border-slate-300 rounded-md p-2'
               name="message"
               placeholder='Cuéntanos sobre cómo planeas promocionar nuestros productos'
+              required
               />
             <ValidationError 
               prefix="Message" 
@@ -65,7 +83,7 @@ function FormAffiliates() {
               errors={state.errors}
               />
             <div className='text-center mt-5 mb-5'>
-                <button type="submit" className='bg-black w-64 h-10 rounded-md text-white  hover:bg-slate-800 font-semibold' disabled={state.submitting}>
+                <button type="submit" className='bg-black w-full h-10 rounded-md text-white  hover:bg-slate-800 font-semibold' disabled={state.submitting}>
                   Enviar Solicitud
                 </button>
             </div>

@@ -46,6 +46,7 @@ function Contact() {
                     id="email"
                     type="email" 
                     name="email"
+                    required
                     />
                   <ValidationError 
                     prefix="Email" 
