@@ -59,7 +59,7 @@
         "stock": 2,
         "category": "Repuestos",
         "image": "https://ae01.alicdn.com/kf/A333c3e812a0e4aa7911dc4a33c6450f5Q.jpg_640x640q90.jpg",
-        "isFeatured": false,
+        "isFeatured": true,
         "image2" : "/images/Pastilas.webp",
         "url" : "5"
     },
@@ -82,7 +82,7 @@
         "price": 4000,
         "title" : "Juego de destornilladores de sellado de aceite para coche, 4 piezas, 135mm, junta tórica, extractor, ganchos de selección, herramientas de reparación.",
         "description" : "El juego de destornilladores de sello de aceite, fabricado en aleación de alta calidad, está diseñado para aplicaciones industriales, automotrices, de hobby y artesanales. El material es duradero, con una alta dureza, y tiene un color verde característico. El conjunto incluye cuatro piezas, ideales para tareas de estiramiento y marcado. Cada destornillador mide 135 mm, lo que proporciona un tamaño conveniente para el trabajo. La estructura robusta asegura un uso prolongado y seguro, sin afectar el medio ambiente. Asegúrate de revisar las dimensiones antes de usarlo para garantizar un ajuste adecuado.",
-        "stock": 2,
+        "stock": 0,
         "category": "Herramientas",
         "image": "https://ae01.alicdn.com/kf/S7e61d8d42939424c828b83b52561be6aj.jpg_640x640q90.jpg",
         "isFeatured": false,
@@ -98,7 +98,7 @@
         "stock": 2,
         "category": "Accesorios",
         "image": " https://ae-pic-a1.aliexpress-media.com/kf/S9a734f15d98e403595246f525457ffecv.jpg_960x960q75.jpg_.avif",
-        "isFeatured": true,
+        "isFeatured": false,
         "image2" : "/images/medidorTradicional.webp",
         "url" : "8"
        

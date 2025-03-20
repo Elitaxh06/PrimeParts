@@ -7,7 +7,9 @@ function Order() {
     const [promoCode, setPromoCode] = useState("");
     const [discountName, setDiscountName] = useState("");
     const discountCodes = {
-        'gcc1': 'Descuento de grettel'
+        'gcc1': 'Descuento de Grettel',
+        'navvarro2005': 'Descuento de Derek',
+        'jeff' : 'Descuento de Jeff',
     };
 
     const { cart } = useCart();
@@ -23,9 +25,9 @@ function Order() {
     }
 
     const applyDiscount = () => {
-        if (discountCodes[promoCode]) {
+        if (discountCodes[promoCode.toLowerCase()]) {
             setDiscount(true);
-            setDiscountName(discountCodes[promoCode]);
+            setDiscountName(discountCodes[promoCode.toLowerCase()]);
         } else {
             setDiscount(false);
             setDiscountName("");

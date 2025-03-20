@@ -7,6 +7,7 @@ import { CallToAction } from "./CallToAction";
 import { CallToContact } from "./CallToContact";
 import { CartSection } from"../../Components/CartSection/CartSection";
 import { CodePromotion } from "./CodePromotion";
+import { CallToAbout } from "./CallToAbout";
 function Home () {
   const [isVisible, setIsVisible] = useState(false)
   
@@ -31,6 +32,8 @@ function Home () {
         <CodePromotion />
         <CallToContact />
         <CallToAction />
+        <CallToAbout />
+
       </main>
   )
 }

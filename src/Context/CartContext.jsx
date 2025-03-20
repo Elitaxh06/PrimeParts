@@ -1,5 +1,4 @@
 import React, { createContext, useContext, useState} from "react";
-import products from "../Services/Products.json"
 const CartContext = createContext()
 
 export const CartProvider = ({children}) => {

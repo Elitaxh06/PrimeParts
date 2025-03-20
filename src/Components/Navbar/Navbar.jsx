@@ -34,13 +34,13 @@ function Navbar() {
                         <NavLink to='/products' end>Productos</NavLink>
                     </li>
                     <li className="ml-5 li hover:text-blue-500 hover:scale-110 active:text-blue-500">
-                        <NavLink to='/about' end>Nosotros</NavLink>
-                    </li>
-                    <li className="ml-5 li hover:text-blue-500 hover:scale-110 active:text-blue-500">
                         <NavLink to='/contact' end>Contacto</NavLink>
                     </li>
-                    <li className={`hidden lg:block md:block sm:hidden ml-5 li hover:text-blue-500 hover:scale-110 active:text-blue-500`}>
+                    <li className='ml-5 li hover:text-blue-500 hover:scale-110 active:text-blue-500'>
                         <NavLink to='/affiliates' end>Afiliados</NavLink>
+                    </li>
+                    <li className="hidden lg:block md:block sm:hidden ml-5 li hover:text-blue-500 hover:scale-110 active:text-blue-500">
+                        <NavLink to='/about' end>Nosotros</NavLink>
                     </li>
                     <li className='ml-5 li hover:bg-white mr-3' id='cart'>
                         <NavLink to="/cart" end>
